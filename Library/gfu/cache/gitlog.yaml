@@ -12,9 +12,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2018-10-26T13:38:56.617-04:00
+  lastUpdatedAtString: 2018-10-26T13:45:19.888-04:00
   initializedAtString: 2018-10-26T13:38:56.617-04:00
   log:
+  - commitID: 036ae824449db571b92c41229a64cca526a0ffbc
+    mergeA: 
+    mergeB: 
+    authorName: Austin
+    authorEmail: austin.laimos@mymail.champlain.edu
+    commitEmail: austin.laimos@mymail.champlain.edu
+    commitName: Austin
+    summary: Adding all to pull
+    description: "Adding all to pull\r\n\r\ndescription"
+    timeString: 2018-10-26T13:39:07.000-04:00
+    commitTimeString: 2018-10-26T13:39:07.000-04:00
+    changes:
+    - path: Library\CurrentLayout.dwlt
+      fullPath: D:\Unity Projects\GameJamOct18\Library\CurrentLayout.dwlt
+      projectPath: Library\CurrentLayout.dwlt
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\EditorInstance.json
+      fullPath: D:\Unity Projects\GameJamOct18\Library\EditorInstance.json
+      projectPath: Library\EditorInstance.json
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\expandedItems
+      fullPath: D:\Unity Projects\GameJamOct18\Library\expandedItems
+      projectPath: Library\expandedItems
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\repoinfo.yaml
+      fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: D:\Unity Projects\GameJamOct18\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      status: 3
+      staged: 0
   - commitID: f1e254922adde9724dde729247660aeff136089d
     mergeA: ccf1ae357b35db7e258541ea3450668dde112b19
     mergeB: 454fbaa914b28fbe5cffc4a638ca142e8465f88a
