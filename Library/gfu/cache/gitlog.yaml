@@ -12,9 +12,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2018-10-26T16:12:19.366-04:00
+  lastUpdatedAtString: 2018-10-26T16:22:36.914-04:00
   initializedAtString: 2018-10-26T16:11:15.927-04:00
   log:
+  - commitID: ca99af86d5d7fef0d75c17f2630a70508a3a47f1
+    mergeA: 
+    mergeB: 
+    authorName: Jacob
+    authorEmail: jacob.biederman@mymail.champlain.edu
+    commitEmail: jacob.biederman@mymail.champlain.edu
+    commitName: Jacob
+    summary: Added end portal tile
+    description: Added end portal tile
+    timeString: 2018-10-26T16:14:04.000-04:00
+    commitTimeString: 2018-10-26T16:14:04.000-04:00
+    changes:
+    - path: Assets\Palette\EndPortal.asset
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\EndPortal.asset
+      projectPath: Assets\Palette\EndPortal.asset
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Palette\EndPortal.asset.meta
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\EndPortal.asset.meta
+      projectPath: Assets\Palette\EndPortal.asset.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Palette\TilePalette.prefab
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\TilePalette.prefab
+      projectPath: Assets\Palette\TilePalette.prefab
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\assetDatabase3
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      status: 3
+      staged: 0
   - commitID: 126e361b1a8de81baf27f9ae549a9ac2b5465a10
     mergeA: 
     mergeB: 

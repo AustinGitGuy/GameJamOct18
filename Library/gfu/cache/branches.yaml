@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2018-10-26T16:12:18.061-04:00
+  lastUpdatedAtString: 2018-10-26T16:53:35.525-04:00
   initializedAtString: 2018-10-26T16:11:15.778-04:00
   localBranches:
+  - name: GameManager
+    tracking: 
   - name: master
     tracking: origin/master
   - name: SceneEditor
@@ -34,9 +36,15 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - GameManager
     - master
     - SceneEditor
     values:
+    - name: GameManager
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
     - name: master
       remote:
         name: origin

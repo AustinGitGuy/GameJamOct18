@@ -12,30 +12,78 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2018-10-26T16:13:52.009-04:00
+  lastUpdatedAtString: 2018-10-26T16:54:37.952-04:00
   initializedAtString: 2018-10-26T15:59:19.049-04:00
   entries:
-  - path: Assets\Palette\EndPortal.asset
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\EndPortal.asset
-    projectPath: Assets\Palette\EndPortal.asset
+  - path: Assets\Scenes\Game.unity
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\Game.unity
+    projectPath: Assets\Scenes\Game.unity
     originalPath: 
     status: 1
     staged: 0
-  - path: Assets\Palette\EndPortal.asset.meta
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\EndPortal.asset.meta
-    projectPath: Assets\Palette\EndPortal.asset.meta
+  - path: Assets\Scenes\Game.unity.meta
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\Game.unity.meta
+    projectPath: Assets\Scenes\Game.unity.meta
     originalPath: 
     status: 1
     staged: 0
-  - path: Assets\Palette\TilePalette.prefab
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\TilePalette.prefab
-    projectPath: Assets\Palette\TilePalette.prefab
+  - path: Assets\Scenes\MainMenu.unity
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\MainMenu.unity
+    projectPath: Assets\Scenes\MainMenu.unity
     originalPath: 
-    status: 3
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\MainMenu.unity.meta
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\MainMenu.unity.meta
+    projectPath: Assets\Scenes\MainMenu.unity.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\StartScreen.unity
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\StartScreen.unity
+    projectPath: Assets\Scenes\StartScreen.unity
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\StartScreen.unity.meta
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\StartScreen.unity.meta
+    projectPath: Assets\Scenes\StartScreen.unity.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\GameManager.cs
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scripts\GameManager.cs
+    projectPath: Assets\Scripts\GameManager.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\GameManager.cs.meta
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scripts\GameManager.cs.meta
+    projectPath: Assets\Scripts\GameManager.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\LevelLoader.cs
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scripts\LevelLoader.cs
+    projectPath: Assets\Scripts\LevelLoader.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scripts\LevelLoader.cs.meta
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scripts\LevelLoader.cs.meta
+    projectPath: Assets\Scripts\LevelLoader.cs.meta
+    originalPath: 
+    status: 1
     staged: 0
   - path: Library\assetDatabase3
     fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\assetDatabase3
     projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\EditorUserBuildSettings.asset
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\EditorUserBuildSettings.asset
+    projectPath: Library\EditorUserBuildSettings.asset
     originalPath: 
     status: 3
     staged: 0
@@ -66,6 +114,18 @@ MonoBehaviour:
   - path: Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings\EditorBuildSettings.asset
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\ProjectSettings\EditorBuildSettings.asset
+    projectPath: ProjectSettings\EditorBuildSettings.asset
     originalPath: 
     status: 3
     staged: 0
