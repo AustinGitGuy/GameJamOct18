@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AustinSandboxScene.unity
+- path: Assets/Scenes/LightingScene.unity
   isLoaded: 1
   isActive: 1
