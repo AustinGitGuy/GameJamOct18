@@ -12,9 +12,135 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2018-10-26T16:22:36.914-04:00
+  lastUpdatedAtString: 2018-10-26T17:00:05.335-04:00
   initializedAtString: 2018-10-26T16:11:15.927-04:00
   log:
+  - commitID: 58a5a36d4c50f3001099676191472edd1f4ff702
+    mergeA: 
+    mergeB: 
+    authorName: Jacob
+    authorEmail: jacob.biederman@mymail.champlain.edu
+    commitEmail: jacob.biederman@mymail.champlain.edu
+    commitName: Jacob
+    summary: Set up Game Scene and Scripts
+    description: Set up Game Scene and Scripts
+    timeString: 2018-10-26T16:54:54.000-04:00
+    commitTimeString: 2018-10-26T16:54:54.000-04:00
+    changes:
+    - path: Assets\Scenes\Game.unity
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\Game.unity
+      projectPath: Assets\Scenes\Game.unity
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes\Game.unity.meta
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\Game.unity.meta
+      projectPath: Assets\Scenes\Game.unity.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes\MainMenu.unity
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\MainMenu.unity
+      projectPath: Assets\Scenes\MainMenu.unity
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes\MainMenu.unity.meta
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\MainMenu.unity.meta
+      projectPath: Assets\Scenes\MainMenu.unity.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes\StartScreen.unity
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\StartScreen.unity
+      projectPath: Assets\Scenes\StartScreen.unity
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scenes\StartScreen.unity.meta
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scenes\StartScreen.unity.meta
+      projectPath: Assets\Scenes\StartScreen.unity.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\GameManager.cs
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scripts\GameManager.cs
+      projectPath: Assets\Scripts\GameManager.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\GameManager.cs.meta
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scripts\GameManager.cs.meta
+      projectPath: Assets\Scripts\GameManager.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\LevelLoader.cs
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scripts\LevelLoader.cs
+      projectPath: Assets\Scripts\LevelLoader.cs
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Assets\Scripts\LevelLoader.cs.meta
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Scripts\LevelLoader.cs.meta
+      projectPath: Assets\Scripts\LevelLoader.cs.meta
+      originalPath: 
+      status: 4
+      staged: 0
+    - path: Library\EditorUserBuildSettings.asset
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\EditorUserBuildSettings.asset
+      projectPath: Library\EditorUserBuildSettings.asset
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\assetDatabase3
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\assetDatabase3
+      projectPath: Library\assetDatabase3
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\branches.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitlog.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      status: 3
+      staged: 0
+    - path: ProjectSettings\EditorBuildSettings.asset
+      fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\ProjectSettings\EditorBuildSettings.asset
+      projectPath: ProjectSettings\EditorBuildSettings.asset
+      originalPath: 
+      status: 3
+      staged: 0
   - commitID: ca99af86d5d7fef0d75c17f2630a70508a3a47f1
     mergeA: 
     mergeB: 
