@@ -12,6 +12,150 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2018-10-26T13:45:20.026-04:00
+  lastUpdatedAtString: 2018-10-26T14:17:25.539-04:00
   initializedAtString: 2018-10-26T13:38:44.589-04:00
-  entries: []
+  entries:
+  - path: .vscode\settings.json
+    fullPath: D:\Unity Projects\GameJamOct18\.vscode\settings.json
+    projectPath: .vscode\settings.json
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayerMove.cs
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\PlayerMove.cs
+    projectPath: Assets\PlayerMove.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PlayerMove.cs.meta
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\PlayerMove.cs.meta
+    projectPath: Assets\PlayerMove.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PushPot.cs
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\PushPot.cs
+    projectPath: Assets\PushPot.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\PushPot.cs.meta
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\PushPot.cs.meta
+    projectPath: Assets\PushPot.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\AustinSandboxScene.unity
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scenes\AustinSandboxScene.unity
+    projectPath: Assets\Scenes\AustinSandboxScene.unity
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\AustinSandboxScene.unity.meta
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scenes\AustinSandboxScene.unity.meta
+    projectPath: Assets\Scenes\AustinSandboxScene.unity.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\SampleScene.unity
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scenes\SampleScene.unity
+    projectPath: Assets\Scenes\SampleScene.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Assets\Sprites.meta
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\Sprites.meta
+    projectPath: Assets\Sprites.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Sprites\WhiteSquare.png
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\Sprites\WhiteSquare.png
+    projectPath: Assets\Sprites\WhiteSquare.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Sprites\WhiteSquare.png.meta
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\Sprites\WhiteSquare.png.meta
+    projectPath: Assets\Sprites\WhiteSquare.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Library\assetDatabase3
+    fullPath: D:\Unity Projects\GameJamOct18\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\branches.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gitlocks.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gitlog.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gitstatusentries.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\InspectorExpandedItems.asset
+    fullPath: D:\Unity Projects\GameJamOct18\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\00\00000000000000009000000000000000
+    fullPath: D:\Unity Projects\GameJamOct18\Library\metadata\00\00000000000000009000000000000000
+    projectPath: Library\metadata\00\00000000000000009000000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\00\0000000000000000a100000000000000
+    fullPath: D:\Unity Projects\GameJamOct18\Library\metadata\00\0000000000000000a100000000000000
+    projectPath: Library\metadata\00\0000000000000000a100000000000000
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\2c\2cda990e2423bbf4892e6590ba056729
+    fullPath: D:\Unity Projects\GameJamOct18\Library\metadata\2c\2cda990e2423bbf4892e6590ba056729
+    projectPath: Library\metadata\2c\2cda990e2423bbf4892e6590ba056729
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\SpriteAtlasDatabase.asset
+    fullPath: D:\Unity Projects\GameJamOct18\Library\SpriteAtlasDatabase.asset
+    projectPath: Library\SpriteAtlasDatabase.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings\QualitySettings.asset
+    fullPath: D:\Unity Projects\GameJamOct18\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: ProjectSettings\UnityConnectSettings.asset
+    fullPath: D:\Unity Projects\GameJamOct18\ProjectSettings\UnityConnectSettings.asset
+    projectPath: ProjectSettings\UnityConnectSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
