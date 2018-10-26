@@ -12,150 +12,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-<<<<<<< HEAD
-  lastUpdatedAtString: 2018-10-26T16:42:29.374-04:00
-  initializedAtString: 2018-10-26T15:48:52.643-04:00
+  lastUpdatedAtString: 2018-10-26T16:55:40.667-04:00
+  initializedAtString: 2018-10-26T16:45:15.729-04:00
   entries:
+  - path: Assets\MoveToPoint.cs
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\MoveToPoint.cs
+    projectPath: Assets\MoveToPoint.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\MoveToPoint.cs.meta
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\MoveToPoint.cs.meta
+    projectPath: Assets\MoveToPoint.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
   - path: Assets\Scenes\AustinSandboxScene.unity
     fullPath: D:\Unity Projects\GameJamOct18\Assets\Scenes\AustinSandboxScene.unity
     projectPath: Assets\Scenes\AustinSandboxScene.unity
     originalPath: 
     status: 3
     staged: 0
-  - path: Assets\Scripts\CheckButton.cs
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\CheckButton.cs
-    projectPath: Assets\Scripts\CheckButton.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\Scripts\CheckRings.cs
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\CheckRings.cs
-    projectPath: Assets\Scripts\CheckRings.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scripts\CheckRings.cs.meta
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\CheckRings.cs.meta
-    projectPath: Assets\Scripts\CheckRings.cs.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scripts\DemonDoor.cs
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\DemonDoor.cs
-    projectPath: Assets\Scripts\DemonDoor.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scripts\DemonDoor.cs.meta
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\DemonDoor.cs.meta
-    projectPath: Assets\Scripts\DemonDoor.cs.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scripts\PlayerManager.cs
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\PlayerManager.cs
-    projectPath: Assets\Scripts\PlayerManager.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\Scripts\PlayerMove.cs
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\PlayerMove.cs
-    projectPath: Assets\Scripts\PlayerMove.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\Scripts\ReminderText.cs
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\ReminderText.cs
-    projectPath: Assets\Scripts\ReminderText.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\Scripts\TimeManager.cs
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\TimeManager.cs
-    projectPath: Assets\Scripts\TimeManager.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scripts\TimeManager.cs.meta
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\TimeManager.cs.meta
-    projectPath: Assets\Scripts\TimeManager.cs.meta
-    originalPath: 
-    status: 1
-=======
-  lastUpdatedAtString: 2018-10-26T16:13:52.009-04:00
-  initializedAtString: 2018-10-26T15:59:19.049-04:00
-  entries:
-  - path: Assets\Palette\EndPortal.asset
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\EndPortal.asset
-    projectPath: Assets\Palette\EndPortal.asset
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Palette\EndPortal.asset.meta
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\EndPortal.asset.meta
-    projectPath: Assets\Palette\EndPortal.asset.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Palette\TilePalette.prefab
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\TilePalette.prefab
-    projectPath: Assets\Palette\TilePalette.prefab
-    originalPath: 
-    status: 3
->>>>>>> ca99af86d5d7fef0d75c17f2630a70508a3a47f1
-    staged: 0
   - path: Library\assetDatabase3
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\assetDatabase3
+    fullPath: D:\Unity Projects\GameJamOct18\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
     staged: 0
-<<<<<<< HEAD
-=======
   - path: Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\branches.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     status: 3
     staged: 0
->>>>>>> ca99af86d5d7fef0d75c17f2630a70508a3a47f1
   - path: Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitlocks.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
-<<<<<<< HEAD
-=======
   - path: Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitlog.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     status: 3
     staged: 0
->>>>>>> ca99af86d5d7fef0d75c17f2630a70508a3a47f1
   - path: Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
     staged: 0
-<<<<<<< HEAD
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\Unity Projects\GameJamOct18\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: ProjectSettings\QualitySettings.asset
-    fullPath: D:\Unity Projects\GameJamOct18\ProjectSettings\QualitySettings.asset
-    projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     status: 3
     staged: 0
@@ -165,5 +81,3 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-=======
->>>>>>> ca99af86d5d7fef0d75c17f2630a70508a3a47f1

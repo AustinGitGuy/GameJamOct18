@@ -12,21 +12,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2018-10-26T16:12:18.061-04:00
-  initializedAtString: 2018-10-26T16:11:15.778-04:00
+  lastUpdatedAtString: 2018-10-26T16:50:42.673-04:00
+  initializedAtString: 2018-10-26T16:49:35.278-04:00
   localBranches:
   - name: master
     tracking: origin/master
-  - name: SceneEditor
-    tracking: origin/SceneEditor
   remoteBranches:
+  - name: origin/HEAD
+    tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
   - name: origin/SceneEditor
     tracking: '[None]'
   remotes:
   - name: origin
-    url: https://github.com/AustinGitGuy/GameJamOct18.git
+    url: https://github.com/AustinGitGuy/GameJamOct18
     login: 
     user: 
     host: 
@@ -35,40 +35,40 @@ MonoBehaviour:
   localConfigBranches:
     keys:
     - master
-    - SceneEditor
     values:
     - name: master
       remote:
         name: origin
-        url: https://github.com/AustinGitGuy/GameJamOct18.git
+        url: https://github.com/AustinGitGuy/GameJamOct18
       trackingBranch: master
-    - name: SceneEditor
-      remote:
-        name: origin
-        url: https://github.com/AustinGitGuy/GameJamOct18.git
-      trackingBranch: SceneEditor
   remoteConfigBranches:
     keys:
     - origin
     subKeys:
     - Values:
+      - HEAD
       - master
       - SceneEditor
     subKeyValues:
     - Values:
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/AustinGitGuy/GameJamOct18
+        trackingBranch: 
       - name: master
         remote:
           name: origin
-          url: https://github.com/AustinGitGuy/GameJamOct18.git
+          url: https://github.com/AustinGitGuy/GameJamOct18
         trackingBranch: 
       - name: SceneEditor
         remote:
           name: origin
-          url: https://github.com/AustinGitGuy/GameJamOct18.git
+          url: https://github.com/AustinGitGuy/GameJamOct18
         trackingBranch: 
   configRemotes:
     keys:
     - origin
     values:
     - name: origin
-      url: https://github.com/AustinGitGuy/GameJamOct18.git
+      url: https://github.com/AustinGitGuy/GameJamOct18
