@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
+<<<<<<< HEAD
   lastUpdatedAtString: 2018-10-26T16:57:55.985-04:00
   initializedAtString: 2018-10-26T14:37:55.527-04:00
   entries:
@@ -210,6 +211,50 @@ MonoBehaviour:
   - path: Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
     fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
     projectPath: Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
+=======
+  lastUpdatedAtString: 2018-10-26T16:55:40.667-04:00
+  initializedAtString: 2018-10-26T16:45:15.729-04:00
+  entries:
+  - path: Assets\MoveToPoint.cs
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\MoveToPoint.cs
+    projectPath: Assets\MoveToPoint.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\MoveToPoint.cs.meta
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\MoveToPoint.cs.meta
+    projectPath: Assets\MoveToPoint.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Scenes\AustinSandboxScene.unity
+    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scenes\AustinSandboxScene.unity
+    projectPath: Assets\Scenes\AustinSandboxScene.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\assetDatabase3
+    fullPath: D:\Unity Projects\GameJamOct18\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\branches.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gitlocks.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gitlog.yaml
+    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+>>>>>>> e66302860432a87fc0f0811a3334a7b195343be1
     originalPath: 
     status: 3
     staged: 0
@@ -225,6 +270,7 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
   - path: Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
     fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
     projectPath: Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
@@ -441,12 +487,15 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+=======
+>>>>>>> e66302860432a87fc0f0811a3334a7b195343be1
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
   - path: Library\SpriteAtlasDatabase.asset
     fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\SpriteAtlasDatabase.asset
     projectPath: Library\SpriteAtlasDatabase.asset
@@ -456,6 +505,11 @@ MonoBehaviour:
   - path: ProjectSettings\ProjectVersion.txt
     fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\ProjectSettings\ProjectVersion.txt
     projectPath: ProjectSettings\ProjectVersion.txt
+=======
+  - path: ProjectSettings\TagManager.asset
+    fullPath: D:\Unity Projects\GameJamOct18\ProjectSettings\TagManager.asset
+    projectPath: ProjectSettings\TagManager.asset
+>>>>>>> e66302860432a87fc0f0811a3334a7b195343be1
     originalPath: 
     status: 3
     staged: 0

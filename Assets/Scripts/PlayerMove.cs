@@ -23,4 +23,15 @@ public class PlayerMove : MonoBehaviour {
     void Move(){
 		rb.velocity = new Vector2(xMove * moveMod, yMove * moveMod);
     }
+
+    void OnTriggerEnter2D(Collider2D col){
+        if(col.gameObject.tag == "WaterVase"){
+            moveMod++;
+            Destroy(col.gameObject);
+        }
+        if(col.gameObject.tag == "Skull"){
+            Managers.PlayerManager.Instance.SkullCollected(1);
+            Destroy(col.gameObject);
+        }
+    }
 }
