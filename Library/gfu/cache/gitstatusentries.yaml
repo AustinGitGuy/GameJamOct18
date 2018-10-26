@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
+<<<<<<< HEAD
   lastUpdatedAtString: 2018-10-26T16:42:29.374-04:00
   initializedAtString: 2018-10-26T15:48:52.643-04:00
   entries:
@@ -80,31 +81,72 @@ MonoBehaviour:
     projectPath: Assets\Scripts\TimeManager.cs.meta
     originalPath: 
     status: 1
+=======
+  lastUpdatedAtString: 2018-10-26T16:13:52.009-04:00
+  initializedAtString: 2018-10-26T15:59:19.049-04:00
+  entries:
+  - path: Assets\Palette\EndPortal.asset
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\EndPortal.asset
+    projectPath: Assets\Palette\EndPortal.asset
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Palette\EndPortal.asset.meta
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\EndPortal.asset.meta
+    projectPath: Assets\Palette\EndPortal.asset.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: Assets\Palette\TilePalette.prefab
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Assets\Palette\TilePalette.prefab
+    projectPath: Assets\Palette\TilePalette.prefab
+    originalPath: 
+    status: 3
+>>>>>>> ca99af86d5d7fef0d75c17f2630a70508a3a47f1
     staged: 0
   - path: Library\assetDatabase3
-    fullPath: D:\Unity Projects\GameJamOct18\Library\assetDatabase3
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
+=======
+  - path: Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+>>>>>>> ca99af86d5d7fef0d75c17f2630a70508a3a47f1
   - path: Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
+=======
+  - path: Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+>>>>>>> ca99af86d5d7fef0d75c17f2630a70508a3a47f1
   - path: Library\gfu\cache\gitstatusentries.yaml
-    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Jacob\Documents\Programs\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\Unity Projects\GameJamOct18\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
@@ -123,3 +165,5 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+=======
+>>>>>>> ca99af86d5d7fef0d75c17f2630a70508a3a47f1
