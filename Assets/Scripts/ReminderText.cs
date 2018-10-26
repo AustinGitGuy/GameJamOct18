@@ -7,15 +7,25 @@ public class ReminderText : MonoBehaviour {
 	GameObject player;
 	FadingText text;
 
+	[SerializeField]
+	bool doorReminder;
+
 	void Start(){
 		text = transform.Find("ReminderText").GetComponent<FadingText>();
-		text.TurnOff();
 		player = Managers.PlayerManager.Instance.GetPlayer();
 	}
 	
 	void Update(){
-		if(Vector2.Distance(player.transform.position, this.transform.position) <= 3){
-            text.FadeIn();
+		if(Vector2.Distance(player.transform.position, this.transform.position) <= 5){
+			if(doorReminder && !GetComponent<CheckRings>().GetDoorOpen()){
+				text.FadeIn();
+			}
+			else if(!doorReminder){
+				text.FadeIn();
+			}
+			else {
+				text.FadeOut();
+			}
 		}
 		else {
 			text.FadeOut();

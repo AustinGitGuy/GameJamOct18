@@ -6,6 +6,8 @@ namespace Managers{
 	public class PlayerManager : Singleton<PlayerManager> {
 
 		public int totalCollectedCoins = 0;
+		public int totalRings = 0;
+		public int totalSkulls = 0;
 		GameObject playerObject;
 
 		void Start(){
@@ -14,6 +16,14 @@ namespace Managers{
 
 		public void CoinCollected(int coinValue){
 			totalCollectedCoins += coinValue;
+		}
+
+		public void RingCollected(int rings){
+			totalRings += rings;
+		}
+
+		public void SkullCollected(int skulls){
+			totalSkulls += skulls;
 		}
 
 		public GameObject GetPlayer(){

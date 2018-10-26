@@ -29,5 +29,9 @@ public class PlayerMove : MonoBehaviour {
             moveMod++;
             Destroy(col.gameObject);
         }
+        if(col.gameObject.tag == "Skull"){
+            Managers.PlayerManager.Instance.SkullCollected(1);
+            Destroy(col.gameObject);
+        }
     }
 }
