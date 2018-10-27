@@ -74,26 +74,26 @@ namespace Managers
 		{
 			switch(playerHealth)
 			{
-				case 0:
+				case 5:
 					health0.sprite = fullHealth;
 					health1.sprite = fullHealth;
 					health2.sprite = fullHealth;
 					health3.sprite = fullHealth;
 					health4.sprite = fullHealth;
 					break;
-				case 1:
+				case 4:
 					health0.sprite = emptyHealth;
 					break;
-				case 2:
+				case 3:
 					health1.sprite = emptyHealth;
 					break;
-				case 3:
+				case 2:
 					health2.sprite = emptyHealth;
 					break;
-				case 4:
+				case 1:
 					health3.sprite = emptyHealth;
 					break;
-				case 5:
+				case 0:
 					health4.sprite = emptyHealth;
 					Die();
 					break;

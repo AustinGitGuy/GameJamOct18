@@ -432,7 +432,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4197350786936848, guid: 451122a634717fc448902be1804f6d2a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1
+      value: -0.935
       objectReference: {fileID: 0}
     - target: {fileID: 4197350786936848, guid: 451122a634717fc448902be1804f6d2a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -458,6 +458,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 212759472523787782, guid: 451122a634717fc448902be1804f6d2a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ffd8179813e9ca546a0df2944adac234, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 451122a634717fc448902be1804f6d2a, type: 2}
   m_IsPrefabAsset: 0
@@ -662,11 +667,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4625839414752742, guid: 02eb5591374e2474a855bb47a21e158f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.94
+      value: -1.56
       objectReference: {fileID: 0}
     - target: {fileID: 4625839414752742, guid: 02eb5591374e2474a855bb47a21e158f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.1
+      value: -3.27
       objectReference: {fileID: 0}
     - target: {fileID: 4625839414752742, guid: 02eb5591374e2474a855bb47a21e158f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1697,6 +1702,16 @@ Prefab:
       propertyPath: _lights.Array.data[0]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114642865064511418, guid: 02eb5591374e2474a855bb47a21e158f,
+        type: 2}
+      propertyPath: ray_width
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114642865064511418, guid: 02eb5591374e2474a855bb47a21e158f,
+        type: 2}
+      propertyPath: distance
+      value: 50
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02eb5591374e2474a855bb47a21e158f, type: 2}
   m_IsPrefabAsset: 0
@@ -1910,11 +1925,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4826982126439110, guid: 93a0d21fb7cbaf84cbd04d2887a55700, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.85
+      value: -2.93
       objectReference: {fileID: 0}
     - target: {fileID: 4826982126439110, guid: 93a0d21fb7cbaf84cbd04d2887a55700, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.17
+      value: -2.72
       objectReference: {fileID: 0}
     - target: {fileID: 4826982126439110, guid: 93a0d21fb7cbaf84cbd04d2887a55700, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4505,6 +4520,9 @@ MonoBehaviour:
   totalRings: 0
   totalSkulls: 0
   health: 0
+  dissolve: {fileID: 4800000, guid: 756fa76407153a54fa7a698bcb0033e8, type: 3}
+  diffuse: {fileID: 10800, guid: 0000000000000000f000000000000000, type: 0}
+  isDissolving: 0
 --- !u!1001 &2001295761
 Prefab:
   m_ObjectHideFlags: 0
