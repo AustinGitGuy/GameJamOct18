@@ -6,8 +6,7 @@ namespace Managers {
 public class TimeManager : Singleton<TimeManager> {
 	
 		public float timeLeft;
-		[SerializeField]
-		float totalTime;
+		public float totalTime;
 		void Start(){
 			timeLeft = totalTime;
 		}
