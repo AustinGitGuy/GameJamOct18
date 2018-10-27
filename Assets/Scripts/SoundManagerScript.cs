@@ -28,7 +28,6 @@ public class SoundManagerScript : Singleton<SoundManagerScript> {
         coinSoundObj = GameObject.Find("coinSoundObj");
         potSoundObj = GameObject.Find("potSoundObj");
         fountainSoundObj = GameObject.Find("fountainSoundObj");
-
     }
 
     public void playSkullSound()
