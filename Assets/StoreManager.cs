@@ -10,7 +10,7 @@ namespace Managers
 {
 	public class StoreManager : MonoBehaviour {
 
-		//LevelLoader sceneManager;
+		LevelLoader sceneManager;
 
 		public int coins;
 		public Text coinsText;
@@ -34,9 +34,9 @@ namespace Managers
 		// Use this for initialization
 		void Start () {
 			
-			//sceneManager = GameManager.Instance.getSceneManager();	
+			sceneManager = GameManager.Instance.getSceneManager();	
 
-			coins = 0;//coins = Managers.PlayerManager.Instance.totalCollectedCoins;
+			coins = Managers.PlayerManager.Instance.totalCollectedCoins;
 			coinsText.text = (coins.ToString());
 
 			jingleBellPanel.SetActive(false);
@@ -92,7 +92,7 @@ namespace Managers
 				if(!buyJingleBell)
 				{
 					buyJingleBell = true;
-					//Managers.PlayerManager.Instance.health++;
+					Managers.PlayerManager.Instance.health++;
 					Managers.PlayerManager.Instance.totalCollectedCoins = Managers.PlayerManager.Instance.totalCollectedCoins - jingleBellPrice;
 				}
 			}
@@ -132,8 +132,8 @@ namespace Managers
 		public void LeaveStore()
 		{
 			Debug.Log("StoreManager/LeaveStore");
-			//sceneManager.loadNextLevel();
-           	//sceneManager.unloadLastLevel();
+			sceneManager.loadNextLevel();
+           	sceneManager.unloadLastLevel();
 		}
 	}
 }
