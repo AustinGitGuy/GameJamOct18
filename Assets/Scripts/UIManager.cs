@@ -50,27 +50,20 @@ namespace Managers
 			timer = Managers.TimeManager.Instance.timeLeft;
 			playerHealth = 0;
 
-			//Initializing the collectibles
+			//Initializing the collectibles	
 			skullsCollected = Managers.PlayerManager.Instance.totalSkulls;
 			ringsCollected = Managers.PlayerManager.Instance.totalRings;
 			coinsCollected = Managers.PlayerManager.Instance.totalCollectedCoins;
-
-			//Fetch the Images from the GameObject
-			health0 = GetComponent<Image>();
-			health1 = GetComponent<Image>();
-			health2 = GetComponent<Image>();
-			health3 = GetComponent<Image>();
-			health4 = GetComponent<Image>();
-			skull0 = GetComponent<Image>();
-			skull1 = GetComponent<Image>();
-			skull2 = GetComponent<Image>();
-			skull3 = GetComponent<Image>();
-			skull4 = GetComponent<Image>();
 		}
 		
 		// Update is called once per frame
 		void Update () {
-			
+			timer = Managers.TimeManager.Instance.timeLeft;
+			skullsCollected = Managers.PlayerManager.Instance.totalSkulls;
+			ringsCollected = Managers.PlayerManager.Instance.totalRings;
+			coinsCollected = Managers.PlayerManager.Instance.totalCollectedCoins;
+			UpdateCoinUI();
+			UpdateRingUI();
 		}
 
 		//Function changes the health UI in the top right corner. Updates when the player takes damage
