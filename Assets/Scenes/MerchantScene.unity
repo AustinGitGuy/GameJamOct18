@@ -1162,8 +1162,8 @@ MonoBehaviour:
   coinsText: {fileID: 2145385965}
   jingleBellPanel: {fileID: 1953834387}
   waterVasePanel: {fileID: 3001236}
-  jingleBellPriceText: {fileID: 0}
-  waterVasePriceText: {fileID: 0}
+  jingleBellPriceText: {fileID: 386530921}
+  waterVasePriceText: {fileID: 1335723947}
 --- !u!4 &1153082530
 Transform:
   m_ObjectHideFlags: 0
@@ -1252,7 +1252,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1174021069}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1153082529}
+        m_MethodName: LeaveStore
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1174021069
@@ -1542,7 +1553,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 142c1f369cb945d4ba6f00e901682ef6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2efee537037923745a8cc988794f6eb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1761,7 +1772,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9ba45290e7431c7479e1af0c6e520548, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4621e19a641680845894e20b4ec684f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
