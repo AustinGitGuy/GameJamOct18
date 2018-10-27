@@ -12,12 +12,13 @@ namespace Managers
         private void Awake()
         {
             Debug.Assert(Instance);
+            sceneManager = gameObject.GetComponent<LevelLoader>();
+            Debug.Assert(sceneManager);
         }
         // Use this for initialization
         void Start()
         {
-            sceneManager = gameObject.GetComponent<LevelLoader>();
-            Debug.Assert(sceneManager);
+            
         }
 
 
