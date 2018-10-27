@@ -48,7 +48,7 @@ namespace Managers
 
 			//Initializing time/health varibales
 			timer = Managers.TimeManager.Instance.timeLeft;
-			playerHealth = 0;
+			playerHealth = Managers.PlayerManager.Instance.health;
 
 			//Initializing the collectibles	
 			skullsCollected = Managers.PlayerManager.Instance.totalSkulls;
@@ -62,6 +62,7 @@ namespace Managers
 			skullsCollected = Managers.PlayerManager.Instance.totalSkulls;
 			ringsCollected = Managers.PlayerManager.Instance.totalRings;
 			coinsCollected = Managers.PlayerManager.Instance.totalCollectedCoins;
+			playerHealth = Managers.PlayerManager.Instance.health;
 			UpdateCoinUI();
 			UpdateRingUI();
 			CollectSkulls();

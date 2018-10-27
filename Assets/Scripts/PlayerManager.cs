@@ -8,6 +8,7 @@ namespace Managers{
 		public int totalCollectedCoins = 0;
 		public int totalRings = 0;
 		public int totalSkulls = 0;
+		public int health;
 		GameObject playerObject;
 
 		void Start(){
@@ -24,6 +25,10 @@ namespace Managers{
 
 		public void SkullCollected(int skulls){
 			totalSkulls += skulls;
+		}
+
+		public void HealthMod(int mod){
+			health += mod;
 		}
 
 		public GameObject GetPlayer(){
