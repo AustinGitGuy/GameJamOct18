@@ -64,6 +64,8 @@ namespace Managers
 			coinsCollected = Managers.PlayerManager.Instance.totalCollectedCoins;
 			UpdateCoinUI();
 			UpdateRingUI();
+			CollectSkulls();
+			RemainingHealth();
 		}
 
 		//Function changes the health UI in the top right corner. Updates when the player takes damage
