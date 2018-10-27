@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//If button is pushed, enable a skull, if not disable it.
 public class CheckButton : MonoBehaviour {
 
 	[SerializeField]

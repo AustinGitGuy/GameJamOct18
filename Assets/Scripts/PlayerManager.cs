@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//stores and manages player info
 namespace Managers{
 	public class PlayerManager : Singleton<PlayerManager> {
 
