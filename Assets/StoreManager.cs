@@ -15,13 +15,21 @@ namespace Managers
 		public int coins;
 		public Text coinsText;
 
+		// Bools to see what the player is viewing or trying to buy
 		bool lookingAtJingleBell;
 		bool lookingAtWaterVase;
 		bool buyJingleBell;
 		bool buyWaterVase;
 
+		// GameObjects that hold all of the information for the item
 		public GameObject jingleBellPanel;
 		public GameObject waterVasePanel;
+		
+		public Text jingleBellPriceText;
+		public Text waterVasePriceText;
+
+		int jingleBellPrice = 3;
+		int waterVasePrice = 1;
 
 		// Use this for initialization
 		void Start () {
@@ -33,6 +41,8 @@ namespace Managers
 
 			jingleBellPanel.SetActive(false);
 			waterVasePanel.SetActive(false);
+			jingleBellPriceText.text = (jingleBellPrice.ToString() + " coins");
+			waterVasePriceText.text = (waterVasePrice.ToString() + " coins");
 			lookingAtJingleBell = false;
 			lookingAtWaterVase = false;
 			buyJingleBell = false;
@@ -83,6 +93,7 @@ namespace Managers
 				{
 					buyJingleBell = true;
 					//Managers.PlayerManager.Instance.health++;
+					Managers.PlayerManager.Instance.totalCollectedCoins = Managers.PlayerManager.Instance.totalCollectedCoins - jingleBellPrice;
 				}
 			}
 
@@ -92,8 +103,29 @@ namespace Managers
 				{
 					buyWaterVase = true;
 					//INCREASE PLAYER SPEED
+					Managers.PlayerManager.Instance.totalCollectedCoins = Managers.PlayerManager.Instance.totalCollectedCoins - waterVasePrice;
 				}
 			}
+		}
+
+		public void CheckPrice()
+		{
+			if(lookingAtJingleBell)
+			{
+				if (coins >= jingleBellPrice)
+				{
+					PurchaseItem();
+				}
+			}
+
+			if(lookingAtWaterVase)
+			{
+				if (coins >= waterVasePrice)
+				{
+					PurchaseItem();
+				}
+			}
+
 		}
 
 		// Once the player is finished purchasing items at the store, they can chose to leave and go to the next level
