@@ -8,6 +8,7 @@ TagManager:
   - Skull
   - CameraPoint
   - Barrel
+  - Ring
   layers:
   - Default
   - TransparentFX
