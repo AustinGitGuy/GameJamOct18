@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - WaterVase
+  - Skull
+  - CameraPoint
+  - Barrel
   layers:
   - Default
   - TransparentFX
@@ -13,9 +17,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Light_Sources
+  - Light_Ambient
+  - Light_Obstacles
   - 
   - 
   - 
@@ -38,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Flooring
+    uniqueID: 3149404197
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

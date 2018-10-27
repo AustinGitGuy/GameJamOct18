@@ -11,11 +11,13 @@ public class CheckButton : MonoBehaviour {
 	GameObject skull;
 	
 	void Update(){
-		if(button.isPushed){
-			skull.gameObject.SetActive(true);
-		}
-		else {
-			skull.gameObject.SetActive(false);
+		if(skull != null){
+			if(button.isPushed){
+				skull.gameObject.SetActive(true);
+			}
+			else {
+				skull.gameObject.SetActive(false);
+			}
 		}
 	}
 }
