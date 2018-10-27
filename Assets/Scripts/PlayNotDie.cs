@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayThenDie : MonoBehaviour {
+public class PlayNotDie : MonoBehaviour {
 	bool play;
 
 	public void Play(){
 		if(!play){
-			play = true;
+			play = true;	
 			transform.Find("Particle").GetComponent<ParticleSystem>().Play();
 		}
-		Destroy(this.gameObject, 1.5f);
 	}
 }

@@ -36,7 +36,7 @@ public class BoxPull : MonoBehaviour {
 			}
 		}
 		else if(mode == 1){
-			if(beingPushed == false){
+			if(!beingPushed){
 				rb.mass = imovableMass;
 			} 
 			else {

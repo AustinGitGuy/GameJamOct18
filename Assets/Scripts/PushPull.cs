@@ -19,7 +19,7 @@ public class PushPull : MonoBehaviour {
 				box.GetComponent<FixedJoint2D>().enabled = true;
 				box.GetComponent<BoxPull>().beingPushed = true;
 			} 
-			else if(Input.GetKeyUp(KeyCode.E)){
+			else if(Input.GetKeyUp(KeyCode.E) && box != null){
 				box.GetComponent<FixedJoint2D>().enabled = false;
 				box.GetComponent<BoxPull>().beingPushed = false;
 			}	
