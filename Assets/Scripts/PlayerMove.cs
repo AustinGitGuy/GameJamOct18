@@ -35,6 +35,9 @@ public class PlayerMove : MonoBehaviour {
     }
 
     void Move(){
+        if(Managers.PlayerManager.Instance.isAnim){
+            return;
+        }
 		rb.velocity = new Vector2(xMove * moveMod, yMove * moveMod);
         if(Mathf.Abs(xMove) > Mathf.Abs(yMove)){
             if(render.sprite != sideSprite){

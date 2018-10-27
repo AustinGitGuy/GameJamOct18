@@ -23,8 +23,10 @@ namespace Managers{
 		float dissolveTimer = 0;
 
 		public bool isDissolving;
+		public bool isAnim;
 
 		void Start(){
+			health = 5;
 			playerObject = GetPlayer();
 			playerRend = playerObject.GetComponent<Renderer>();
 		}

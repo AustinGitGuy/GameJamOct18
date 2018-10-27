@@ -12,7 +12,7 @@ namespace Managers
 	{
 		[Header("Time/Health")]
 		public float timer;
-		public int playerHealth;
+		public int playerHealth = 5;
 
 		[Header("Collectibles")]
 		public int skullsCollected;
