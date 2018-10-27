@@ -5,6 +5,7 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class WindowLight2D : MonoBehaviour {
 
+	public bool horizontal;
     public float light_intensity = 200f;
     public float light_range = 2f;
     public Gradient ray_gradient = new Gradient();
@@ -50,8 +51,11 @@ public class WindowLight2D : MonoBehaviour {
 	{
 		_coordinates.Clear();
 		for (int i = 0; i < raysNumber; i++){
-			_coordinates.Add (new Vector2(transform.position.x,transform.position.y) + new Vector2 (0, i*(ray_step)) );
-			Debug.Log (_coordinates[i]);
+			if (horizontal == true) {
+				_coordinates.Add (new Vector2 (transform.position.x, transform.position.y) + new Vector2 (0, i * (ray_step)));
+			} else { 
+				_coordinates.Add (new Vector2 (transform.position.x, transform.position.y) + new Vector2 (i * (ray_step), 0));
+			}
 		}
 
 	}
@@ -118,21 +122,26 @@ public class WindowLight2D : MonoBehaviour {
 		int j = 0;
         foreach(GameObject obj in _laserScaner)
         {
-            if (obj)
-            {
-                //float y = i <= raysNumber / 2f ? i * ray_step : (i - raysNumber / 2) * -ray_step;
-                //float calcDistance = Mathf.Sqrt(Mathf.Pow(distance, 2f) + Mathf.Pow(y, 2f));
-                //float deg = Mathf.Atan2(y, distance) * Mathf.Rad2Deg;
-                //Vector2 direction = RotateVector(transform.TransformDirection(Vector2.right), deg);
-				Vector2 direction = new Vector2(_coordinates[j].x + distance,_coordinates[j].y);
+			if (obj) {
+				//float y = i <= raysNumber / 2f ? i * ray_step : (i - raysNumber / 2) * -ray_step;
+				//float calcDistance = Mathf.Sqrt(Mathf.Pow(distance, 2f) + Mathf.Pow(y, 2f));
+				//float deg = Mathf.Atan2(y, distance) * Mathf.Rad2Deg;
+				//Vector2 direction = RotateVector(transform.TransformDirection(Vector2.right), deg);
 
-                LineRenderer line;
-
-                line = obj.GetComponent<LineRenderer>();
-
-                if(line)
-					DrawRay(ref line, _coordinates[j], direction, distance, i == 0 ? true : false);
-            }
+				if (horizontal == true) {
+					Vector2 direction = new Vector2 (_coordinates [j].x + distance, _coordinates [j].y);
+					LineRenderer line;
+					line = obj.GetComponent<LineRenderer> ();
+					if (line)
+						DrawRay (ref line, _coordinates [j], direction, distance, i == 0 ? true : false);
+				} else {
+					Vector2 direction = new Vector2 (_coordinates [j].x, _coordinates [j].y + distance);
+					LineRenderer line;
+					line = obj.GetComponent<LineRenderer> ();
+					if (line)
+						DrawRay (ref line, _coordinates [j], direction, distance, i == 0 ? true : false);
+				}
+			}
             i++;
 			j++;
         }
@@ -143,6 +152,12 @@ public class WindowLight2D : MonoBehaviour {
 
     private void DrawRay(ref LineRenderer line, Vector2 position, Vector2 direction, float distance, bool lightPos)
     {
+		if (horizontal == true) {
+			direction.y = 0;
+		} else {
+			direction.x = 0;
+		}
+
         RaycastHit2D hitRayCast = new RaycastHit2D();
         hitRayCast = Physics2D.Raycast(position, direction, distance);
 
@@ -156,7 +171,11 @@ public class WindowLight2D : MonoBehaviour {
             light.enabled = false;
         }
 
-		direction.y = 0;
+		if (horizontal == true) {
+			direction.y = 0;
+		} else {
+			direction.x = 0;
+		}
 
         line.positionCount = 2;
         Vector3[] positions = new Vector3[2];
@@ -170,7 +189,8 @@ public class WindowLight2D : MonoBehaviour {
             if (debugLight)
                 Debug.DrawRay(position, direction * hitRayCast.distance, Color.red);
 
-            positions[1] = hitRayCast.point;
+			positions[1] = (hitRayCast.point);
+			Debug.Log (hitRayCast.point);
 
             if (enableLight)
             {
