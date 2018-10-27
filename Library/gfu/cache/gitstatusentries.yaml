@@ -12,509 +12,329 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-<<<<<<< HEAD
-  lastUpdatedAtString: 2018-10-26T16:57:55.985-04:00
-  initializedAtString: 2018-10-26T14:37:55.527-04:00
+  lastUpdatedAtString: 2018-10-26T21:24:40.172-04:00
+  initializedAtString: 2018-10-26T17:24:17.213-04:00
   entries:
-  - path: Assets\MainMenu.cs
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Assets\MainMenu.cs
-    projectPath: Assets\MainMenu.cs
+  - path: Assets\Lighting\Wheel of Lights.prefab
+    fullPath: D:\Montreal\GameJam\Assets\Lighting\Wheel of Lights.prefab
+    projectPath: Assets\Lighting\Wheel of Lights.prefab
     originalPath: 
     status: 1
     staged: 0
-  - path: Assets\MainMenu.cs.meta
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Assets\MainMenu.cs.meta
-    projectPath: Assets\MainMenu.cs.meta
+  - path: Assets\Lighting\Wheel of Lights.prefab.meta
+    fullPath: D:\Montreal\GameJam\Assets\Lighting\Wheel of Lights.prefab.meta
+    projectPath: Assets\Lighting\Wheel of Lights.prefab.meta
     originalPath: 
     status: 1
     staged: 0
-  - path: Assets\Scenes\GameUIScene.unity
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Assets\Scenes\GameUIScene.unity
-    projectPath: Assets\Scenes\GameUIScene.unity
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scenes\GameUIScene.unity.meta
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Assets\Scenes\GameUIScene.unity.meta
-    projectPath: Assets\Scenes\GameUIScene.unity.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scenes\MainMenuScene.unity
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Assets\Scenes\MainMenuScene.unity
-    projectPath: Assets\Scenes\MainMenuScene.unity
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scenes\MainMenuScene.unity.meta
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Assets\Scenes\MainMenuScene.unity.meta
-    projectPath: Assets\Scenes\MainMenuScene.unity.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\UIManager.cs
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Assets\UIManager.cs
-    projectPath: Assets\UIManager.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\UIManager.cs.meta
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Assets\UIManager.cs.meta
-    projectPath: Assets\UIManager.cs.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Library\assetDatabase3
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\assetDatabase3
-    projectPath: Library\assetDatabase3
+  - path: Assets\Scenes\LevelTemplate.unity
+    fullPath: D:\Montreal\GameJam\Assets\Scenes\LevelTemplate.unity
+    projectPath: Assets\Scenes\LevelTemplate.unity
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
-    projectPath: Library\gfu\cache\gitstatusentries.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\gfu\cache\gittrackingstatus.yaml
-    projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000002000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000002000000000000000
-    projectPath: Library\metadata\00\00000000000000002000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000003000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000003000000000000000
-    projectPath: Library\metadata\00\00000000000000003000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000004000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000004000000000000000
-    projectPath: Library\metadata\00\00000000000000004000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000004100000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000004100000000000000
-    projectPath: Library\metadata\00\00000000000000004100000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000005000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000005000000000000000
-    projectPath: Library\metadata\00\00000000000000005000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000005100000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000005100000000000000
-    projectPath: Library\metadata\00\00000000000000005100000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000006000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000006000000000000000
-    projectPath: Library\metadata\00\00000000000000006000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000006100000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000006100000000000000
-    projectPath: Library\metadata\00\00000000000000006100000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000007000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000007000000000000000
-    projectPath: Library\metadata\00\00000000000000007000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000007100000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000007100000000000000
-    projectPath: Library\metadata\00\00000000000000007100000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000008000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000008000000000000000
-    projectPath: Library\metadata\00\00000000000000008000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\00000000000000009000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\00000000000000009000000000000000
-    projectPath: Library\metadata\00\00000000000000009000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\0000000000000000a100000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\0000000000000000a100000000000000
-    projectPath: Library\metadata\00\0000000000000000a100000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\0000000000000000b000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\0000000000000000b000000000000000
-    projectPath: Library\metadata\00\0000000000000000b000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\0000000000000000b100000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\0000000000000000b100000000000000
-    projectPath: Library\metadata\00\0000000000000000b100000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\00\0000000000000000c000000000000000
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\00\0000000000000000c000000000000000
-    projectPath: Library\metadata\00\0000000000000000c000000000000000
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\07\072450ffed31fe545a60f71f33f53916
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\07\072450ffed31fe545a60f71f33f53916
-    projectPath: Library\metadata\07\072450ffed31fe545a60f71f33f53916
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
-    projectPath: Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\13\131a6b21c8605f84396be9f6751fb6e3
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\13\131a6b21c8605f84396be9f6751fb6e3
-    projectPath: Library\metadata\13\131a6b21c8605f84396be9f6751fb6e3
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf
-    projectPath: Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
-    projectPath: Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
-=======
-  lastUpdatedAtString: 2018-10-26T16:55:40.667-04:00
-  initializedAtString: 2018-10-26T16:45:15.729-04:00
-  entries:
-  - path: Assets\MoveToPoint.cs
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\MoveToPoint.cs
-    projectPath: Assets\MoveToPoint.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\MoveToPoint.cs.meta
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\MoveToPoint.cs.meta
-    projectPath: Assets\MoveToPoint.cs.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: Assets\Scenes\AustinSandboxScene.unity
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scenes\AustinSandboxScene.unity
-    projectPath: Assets\Scenes\AustinSandboxScene.unity
+  - path: Assets\Scenes\LightingScene.unity
+    fullPath: D:\Montreal\GameJam\Assets\Scenes\LightingScene.unity
+    projectPath: Assets\Scenes\LightingScene.unity
     originalPath: 
     status: 3
     staged: 0
   - path: Library\assetDatabase3
-    fullPath: D:\Unity Projects\GameJamOct18\Library\assetDatabase3
+    fullPath: D:\Montreal\GameJam\Library\assetDatabase3
     projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\CurrentLayout.dwlt
+    fullPath: D:\Montreal\GameJam\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     status: 3
     staged: 0
   - path: Library\gfu\cache\branches.yaml
-    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\branches.yaml
+    fullPath: D:\Montreal\GameJam\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlocks.yaml
+    fullPath: D:\Montreal\GameJam\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\gfu\cache\gitlog.yaml
-    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
->>>>>>> e66302860432a87fc0f0811a3334a7b195343be1
+  - path: Library\gfu\cache\gitstatusentries.yaml
+    fullPath: D:\Montreal\GameJam\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: D:\Montreal\GameJam\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\07\072450ffed31fe545a60f71f33f53916
+    fullPath: D:\Montreal\GameJam\Library\metadata\07\072450ffed31fe545a60f71f33f53916
+    projectPath: Library\metadata\07\072450ffed31fe545a60f71f33f53916
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
+    fullPath: D:\Montreal\GameJam\Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
+    projectPath: Library\metadata\0d\0d3bb855445e36e479c85976fc88383a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf
+    fullPath: D:\Montreal\GameJam\Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf
+    projectPath: Library\metadata\16\1638f3415e6a8594ba9323f0ba3c5acf
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
+    fullPath: D:\Montreal\GameJam\Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
+    projectPath: Library\metadata\19\19ead9387dc9ef14fad0436a846268f7
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
+    fullPath: D:\Montreal\GameJam\Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
     projectPath: Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\20\204a570cd0814334ba2fd79718030cc0
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\20\204a570cd0814334ba2fd79718030cc0
+    fullPath: D:\Montreal\GameJam\Library\metadata\20\204a570cd0814334ba2fd79718030cc0
     projectPath: Library\metadata\20\204a570cd0814334ba2fd79718030cc0
     originalPath: 
     status: 3
     staged: 0
-<<<<<<< HEAD
   - path: Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
+    fullPath: D:\Montreal\GameJam\Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
     projectPath: Library\metadata\26\2642008eb81683d4dbc7cd4ad6a2c485
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\26\2682a692a2be7e14e901a738c7806da0
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\26\2682a692a2be7e14e901a738c7806da0
+    fullPath: D:\Montreal\GameJam\Library\metadata\26\2682a692a2be7e14e901a738c7806da0
     projectPath: Library\metadata\26\2682a692a2be7e14e901a738c7806da0
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\metadata\2c\2cda990e2423bbf4892e6590ba056729
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\2c\2cda990e2423bbf4892e6590ba056729
-    projectPath: Library\metadata\2c\2cda990e2423bbf4892e6590ba056729
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
+    fullPath: D:\Montreal\GameJam\Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
     projectPath: Library\metadata\2f\2fe3476eabbbb6c448e6b55a2cc471f5
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
+    fullPath: D:\Montreal\GameJam\Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
     projectPath: Library\metadata\32\328cc881519068e4eb7db4bb907ad2d9
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
+    fullPath: D:\Montreal\GameJam\Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
     projectPath: Library\metadata\3b\3bb0254b9671413d9d08a855c5090237
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
+    fullPath: D:\Montreal\GameJam\Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
     projectPath: Library\metadata\3e\3e9a2175e0404f7ea30b2b694850bae0
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\46\46098a81a64a45c5b756320e10a22f13
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\46\46098a81a64a45c5b756320e10a22f13
+    fullPath: D:\Montreal\GameJam\Library\metadata\46\46098a81a64a45c5b756320e10a22f13
     projectPath: Library\metadata\46\46098a81a64a45c5b756320e10a22f13
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
+    fullPath: D:\Montreal\GameJam\Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
     projectPath: Library\metadata\49\49f5766d0d4954f44b85d4bbd7131677
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\4a\4a813084baf34314aa7b09881c317646
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\4a\4a813084baf34314aa7b09881c317646
+    fullPath: D:\Montreal\GameJam\Library\metadata\4a\4a813084baf34314aa7b09881c317646
     projectPath: Library\metadata\4a\4a813084baf34314aa7b09881c317646
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\4d\4d64205430999a04981dab6f259b6e44
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\4d\4d64205430999a04981dab6f259b6e44
+    fullPath: D:\Montreal\GameJam\Library\metadata\4d\4d64205430999a04981dab6f259b6e44
     projectPath: Library\metadata\4d\4d64205430999a04981dab6f259b6e44
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\5e\5e27b1dcd46fbfb459fd62aef1d20f07
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\5e\5e27b1dcd46fbfb459fd62aef1d20f07
+    fullPath: D:\Montreal\GameJam\Library\metadata\5e\5e27b1dcd46fbfb459fd62aef1d20f07
     projectPath: Library\metadata\5e\5e27b1dcd46fbfb459fd62aef1d20f07
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\64\6416c33b0bf58844fa4cc6d5182f23cb
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\64\6416c33b0bf58844fa4cc6d5182f23cb
+    fullPath: D:\Montreal\GameJam\Library\metadata\64\6416c33b0bf58844fa4cc6d5182f23cb
     projectPath: Library\metadata\64\6416c33b0bf58844fa4cc6d5182f23cb
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\69\6981461fe431401459211818212a29cf
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\69\6981461fe431401459211818212a29cf
+    fullPath: D:\Montreal\GameJam\Library\metadata\69\6981461fe431401459211818212a29cf
     projectPath: Library\metadata\69\6981461fe431401459211818212a29cf
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
+    fullPath: D:\Montreal\GameJam\Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
     projectPath: Library\metadata\6e\6e2d432c5ea14e75aa3a79f90f704442
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
+    fullPath: D:\Montreal\GameJam\Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
     projectPath: Library\metadata\6f\6fe576b47d8b47688ec5d02bccd15cf9
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\74\74101c7619674b24d82777e7458e0977
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\74\74101c7619674b24d82777e7458e0977
+    fullPath: D:\Montreal\GameJam\Library\metadata\74\74101c7619674b24d82777e7458e0977
     projectPath: Library\metadata\74\74101c7619674b24d82777e7458e0977
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\75\75799de484ac4f4cadc268d2cbea830a
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\75\75799de484ac4f4cadc268d2cbea830a
+    fullPath: D:\Montreal\GameJam\Library\metadata\75\75799de484ac4f4cadc268d2cbea830a
     projectPath: Library\metadata\75\75799de484ac4f4cadc268d2cbea830a
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
+    fullPath: D:\Montreal\GameJam\Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
     projectPath: Library\metadata\84\84ca94c19f25ae14d83aa41bb3654390
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
+    fullPath: D:\Montreal\GameJam\Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
     projectPath: Library\metadata\8e\8e7066e382b0fc749b25dbb1a3004dfe
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
+    fullPath: D:\Montreal\GameJam\Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
     projectPath: Library\metadata\90\9078b7128e594410d9b89e5b24cffd01
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\9b\9b3a918d590e4e1459441f9ead225410
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\9b\9b3a918d590e4e1459441f9ead225410
+    fullPath: D:\Montreal\GameJam\Library\metadata\9b\9b3a918d590e4e1459441f9ead225410
     projectPath: Library\metadata\9b\9b3a918d590e4e1459441f9ead225410
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\aa\aa2083952c228ce409569f5d690c4dd9
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\aa\aa2083952c228ce409569f5d690c4dd9
+    fullPath: D:\Montreal\GameJam\Library\metadata\aa\aa2083952c228ce409569f5d690c4dd9
     projectPath: Library\metadata\aa\aa2083952c228ce409569f5d690c4dd9
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\ad\ad3539a1bf7ab2c41ba07a9f67559f6e
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\ad\ad3539a1bf7ab2c41ba07a9f67559f6e
+    fullPath: D:\Montreal\GameJam\Library\metadata\ad\ad3539a1bf7ab2c41ba07a9f67559f6e
     projectPath: Library\metadata\ad\ad3539a1bf7ab2c41ba07a9f67559f6e
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\b0\b065703cfbf00f74bb12dd5fc273ec59
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\b0\b065703cfbf00f74bb12dd5fc273ec59
+    fullPath: D:\Montreal\GameJam\Library\metadata\b0\b065703cfbf00f74bb12dd5fc273ec59
     projectPath: Library\metadata\b0\b065703cfbf00f74bb12dd5fc273ec59
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
+    fullPath: D:\Montreal\GameJam\Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
     projectPath: Library\metadata\b2\b2b693dffac3a4433b3114fea0b7fd4e
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
+    fullPath: D:\Montreal\GameJam\Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
     projectPath: Library\metadata\b9\b95ab00277ee47c687d710a3bb623d0a
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\d0\d05b96cee66e14240838de167097537a
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\d0\d05b96cee66e14240838de167097537a
+    fullPath: D:\Montreal\GameJam\Library\metadata\d0\d05b96cee66e14240838de167097537a
     projectPath: Library\metadata\d0\d05b96cee66e14240838de167097537a
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
+    fullPath: D:\Montreal\GameJam\Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
     projectPath: Library\metadata\d9\d91035c548f23744c9bfb107348ed1c0
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\db\db2c1ccad7abc5945acd3342facc4e4c
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\db\db2c1ccad7abc5945acd3342facc4e4c
+    fullPath: D:\Montreal\GameJam\Library\metadata\db\db2c1ccad7abc5945acd3342facc4e4c
     projectPath: Library\metadata\db\db2c1ccad7abc5945acd3342facc4e4c
     originalPath: 
     status: 3
     staged: 0
   - path: Library\metadata\e3\e33383ce3afd26c41a6994f0af6a6743
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\metadata\e3\e33383ce3afd26c41a6994f0af6a6743
+    fullPath: D:\Montreal\GameJam\Library\metadata\e3\e33383ce3afd26c41a6994f0af6a6743
     projectPath: Library\metadata\e3\e33383ce3afd26c41a6994f0af6a6743
     originalPath: 
     status: 3
     staged: 0
-  - path: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    originalPath: 
-    status: 5
-    staged: 0
   - path: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
+    fullPath: D:\Montreal\GameJam\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
     projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll.mdb
     originalPath: 
     status: 3
     staged: 0
   - path: Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
+    fullPath: D:\Montreal\GameJam\Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
     projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll.mdb
     originalPath: 
     status: 3
     staged: 0
   - path: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
+    fullPath: D:\Montreal\GameJam\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
     projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll.mdb
     originalPath: 
     status: 3
     staged: 0
   - path: Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
+    fullPath: D:\Montreal\GameJam\Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
     projectPath: Library\ScriptAssemblies\UnityEditor.StandardEvents.dll.mdb
     originalPath: 
     status: 3
     staged: 0
-=======
->>>>>>> e66302860432a87fc0f0811a3334a7b195343be1
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: D:\Montreal\GameJam\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
-<<<<<<< HEAD
   - path: Library\SpriteAtlasDatabase.asset
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\Library\SpriteAtlasDatabase.asset
+    fullPath: D:\Montreal\GameJam\Library\SpriteAtlasDatabase.asset
     projectPath: Library\SpriteAtlasDatabase.asset
     originalPath: 
     status: 3
     staged: 0
   - path: ProjectSettings\ProjectVersion.txt
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\ProjectSettings\ProjectVersion.txt
+    fullPath: D:\Montreal\GameJam\ProjectSettings\ProjectVersion.txt
     projectPath: ProjectSettings\ProjectVersion.txt
-=======
-  - path: ProjectSettings\TagManager.asset
-    fullPath: D:\Unity Projects\GameJamOct18\ProjectSettings\TagManager.asset
-    projectPath: ProjectSettings\TagManager.asset
->>>>>>> e66302860432a87fc0f0811a3334a7b195343be1
     originalPath: 
     status: 3
     staged: 0
   - path: ProjectSettings\QualitySettings.asset
-    fullPath: C:\Users\student\Desktop\Game Jam\GameJamOct18\ProjectSettings\QualitySettings.asset
+    fullPath: D:\Montreal\GameJam\ProjectSettings\QualitySettings.asset
     projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     status: 3
