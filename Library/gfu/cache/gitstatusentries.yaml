@@ -12,51 +12,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2018-10-26T20:56:39.295-04:00
+  lastUpdatedAtString: 2018-10-26T21:02:49.819-04:00
   initializedAtString: 2018-10-26T20:36:24.578-04:00
   entries:
-  - path: Assets\Scenes\AustinSandboxScene.unity
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scenes\AustinSandboxScene.unity
-    projectPath: Assets\Scenes\AustinSandboxScene.unity
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Assets\Scripts\ButtonPushed.cs
-    fullPath: D:\Unity Projects\GameJamOct18\Assets\Scripts\ButtonPushed.cs
-    projectPath: Assets\Scripts\ButtonPushed.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\assetDatabase3
-    fullPath: D:\Unity Projects\GameJamOct18\Library\assetDatabase3
-    projectPath: Library\assetDatabase3
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\CurrentLayout.dwlt
-    fullPath: D:\Unity Projects\GameJamOct18\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\expandedItems
-    fullPath: D:\Unity Projects\GameJamOct18\Library\expandedItems
-    projectPath: Library\expandedItems
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Library\gfu\cache\gitlog.yaml
-    fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
-    originalPath: 
-    status: 3
-    staged: 0
   - path: Library\gfu\cache\gitstatusentries.yaml
     fullPath: D:\Unity Projects\GameJamOct18\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
@@ -72,18 +30,6 @@ MonoBehaviour:
   - path: Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\Unity Projects\GameJamOct18\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: ProjectSettings\ProjectVersion.txt
-    fullPath: D:\Unity Projects\GameJamOct18\ProjectSettings\ProjectVersion.txt
-    projectPath: ProjectSettings\ProjectVersion.txt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: ProjectSettings\TagManager.asset
-    fullPath: D:\Unity Projects\GameJamOct18\ProjectSettings\TagManager.asset
-    projectPath: ProjectSettings\TagManager.asset
     originalPath: 
     status: 3
     staged: 0
