@@ -18,6 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/placeholderScenes/TempUI.unity
     guid: 518d9ee5bca0811459728fea90c26376
   - enabled: 1
+    path: Assets/Scenes/placeholderScenes/TempShopping.unity
+    guid: 68cd3202cdd463249bae14ec515c0f1d
+  - enabled: 1
+    path: Assets/Scenes/placeholderScenes/TempWin.unity
+    guid: 8994b848441ac464a87c6f5e70db4e2a
+  - enabled: 1
     path: Assets/Scenes/placeholderScenes/TempLevelOne.unity
     guid: abee1fd3cc9c2314fbd9bf0c51ca8bc3
   m_configObjects: {}

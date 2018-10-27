@@ -8,13 +8,22 @@ enum Scenes
 {
     GAME = 0,
     START,
-    SOUND,
+    SOUND,  
     UI,
-    LEVEL_ONE = 4,
+    SHOP,
+    WIN_SCENE,
+    LEVEL_ONE
 }
 
 //Encapsulation of SceneManagement
 public class LevelLoader : MonoBehaviour {
+    /*
+     * Standard Flow
+     * SetupGame
+     * Start -> loadNextLevel()
+     * won -> loadShop()
+     * unload last level
+     */
     [SerializeField]
     bool ShouldRunGame = false;
     int currentScene = -1; //currently loaded level.
@@ -43,6 +52,14 @@ public class LevelLoader : MonoBehaviour {
     {
         Application.Quit();
     }
+
+    public void loadWinScreen()
+    {
+        SceneManager.LoadScene((int)Scenes.WIN_SCENE, LoadSceneMode.Additive);
+        unloadLastLevel();
+        SceneManager.UnloadSceneAsync(currentScene);
+
+    }
     //Load the next level and incremement the next level to load
     public void loadNextLevel()
     {
@@ -59,7 +76,14 @@ public class LevelLoader : MonoBehaviour {
             Debug.LogError("Did you unload the previous scene?");
         }
     }
-
+    public void loadShop()
+    {
+        SceneManager.LoadScene((int)Scenes.SHOP, LoadSceneMode.Additive);
+    }
+    public void unloadShop()
+    {
+        SceneManager.UnloadSceneAsync((int)Scenes.SHOP);
+    }
     //Unload the previous level.
     public void unloadLastLevel()
     {
