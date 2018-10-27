@@ -4,16 +4,17 @@ using UnityEngine;
 using Managers;
 
 public class GameManager : Singleton<GameManager> {
-
+    LevelLoader sceneManager;
 	// Use this for initialization
 	void Start () {
-		
+        sceneManager = gameObject.GetComponent<LevelLoader>();
+        Debug.Assert(sceneManager);
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    
 
-
+    public LevelLoader getSceneManager()
+    {
+        return sceneManager; //does this work if it's not a pointer?
+    }
 }
