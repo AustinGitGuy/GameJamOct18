@@ -905,7 +905,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4197350786936848, guid: 451122a634717fc448902be1804f6d2a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4197350786936848, guid: 451122a634717fc448902be1804f6d2a, type: 2}
       propertyPath: m_LocalPosition.y
@@ -966,7 +966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f5152bbe86fb0488974446d2936dc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShouldRunGame: 1
+  ShouldRunGame: 0
 --- !u!114 &1786980545
 MonoBehaviour:
   m_ObjectHideFlags: 0

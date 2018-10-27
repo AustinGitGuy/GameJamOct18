@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 50851866263629090}
   - component: {fileID: 70281958335266388}
   - component: {fileID: 114109624769236118}
+  - component: {fileID: 114632765776822368}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1352602173313080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -0.935, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4387940239456198}
@@ -139,6 +140,25 @@ MonoBehaviour:
   forwardSprite: {fileID: 21300000, guid: eb60b384ea4a11142998f943ced110cd, type: 3}
   backwardsSprite: {fileID: 21300000, guid: 95e9ca82f0178874b98ed64466f5d533, type: 3}
   sideSprite: {fileID: 21300000, guid: 44421aed391622f4fb22a1e03f7eba55, type: 3}
+--- !u!114 &114632765776822368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1352602173313080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35029e135963ab42bd61feb52eebbaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalCollectedCoins: 0
+  totalRings: 0
+  totalSkulls: 0
+  health: 0
+  dissolve: {fileID: 0}
+  diffuse: {fileID: 0}
+  isDissolving: 0
+  isAnim: 0
 --- !u!198 &198649312519132036
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -4769,7 +4789,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.93, y: 1.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

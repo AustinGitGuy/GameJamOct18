@@ -15,10 +15,10 @@ public class tempButtonScript : MonoBehaviour {
     }
     public void shop()
     {
-        Managers.GameManager.Instance.getSceneManager().loadShop();
+        Managers.GameManager.Instance.getSceneManager().goShopping();
     }
     public void unshop()
     {
-        Managers.GameManager.Instance.getSceneManager().unloadShop();
+        Managers.GameManager.Instance.getSceneManager().stopShopping();
     }
 }
