@@ -269,8 +269,8 @@ GameObject:
   - component: {fileID: 499698959}
   - component: {fileID: 499698960}
   m_Layer: 0
-  m_Name: Pot
-  m_TagString: Pot
+  m_Name: Barrel
+  m_TagString: Barrel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

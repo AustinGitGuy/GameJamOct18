@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/LightingScene.unity
+=======
+- path: Assets/Scenes/AustinSandboxScene.unity
+>>>>>>> a2d4221537274dca84126cafa2f150c507a9270d
   isLoaded: 1
   isActive: 1
 - path: Assets/Scenes/LevelTemplate.unity
