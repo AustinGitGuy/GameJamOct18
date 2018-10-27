@@ -1,4 +1,16 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/TestLevel1.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/MainMenuScene.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/LightingScene.unity
+=======
+- path: Assets/Scenes/AustinSandboxScene.unity
+>>>>>>> a2d4221537274dca84126cafa2f150c507a9270d
+>>>>>>> b8a4df3f4bbb52dc006bb6fee6511500be7a7bad
+>>>>>>> 11f75e540fd98e1c7f8858bab5ea84aae20ae70f
   isLoaded: 1
   isActive: 1

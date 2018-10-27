@@ -9,6 +9,8 @@ public class ReminderText : MonoBehaviour {
 
 	[SerializeField]
 	bool doorReminder;
+	[SerializeField]
+	float range;
 
 	void Start(){
 		text = transform.Find("ReminderText").GetComponent<FadingText>();
@@ -16,7 +18,7 @@ public class ReminderText : MonoBehaviour {
 	}
 	
 	void Update(){
-		if(Vector2.Distance(player.transform.position, this.transform.position) <= 5){
+		if(Vector2.Distance(player.transform.position, this.transform.position) <= range){
 			if(doorReminder && !GetComponent<CheckRings>().GetDoorOpen()){
 				text.FadeIn();
 			}
