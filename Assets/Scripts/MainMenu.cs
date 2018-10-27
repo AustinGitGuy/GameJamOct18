@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,21 +9,21 @@ public class MainMenu : MonoBehaviour {
     //Use LevelLoader for all scene loading / unloading needs
     private void Start()
     {
-        sceneManager = GameManager.Instance.getSceneManager();
+        sceneManager = Managers.GameManager.Instance.getSceneManager();
         Debug.Assert(sceneManager);
     }
     //Function is attached to the Play button and is used to advance the game to the next scene
     public void PlayGame()
-	{
-		Debug.Log("Play Game");
-		sceneManager.loadNextLevel();
+    {
+        Debug.Log("Play Game");
+        sceneManager.loadNextLevel();
         sceneManager.unloadLastLevel();
-	}
+    }
 
-	//Function is attached to the Quit button and is used to leave the application
-	public void QuitGame()
-	{
-		Debug.Log("Quit Game");
+    //Function is attached to the Quit button and is used to leave the application
+    public void QuitGame()
+    {
+        Debug.Log("Quit Game");
         sceneManager.quit();
-	}
+    }
 }

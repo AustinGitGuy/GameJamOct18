@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Controls player movement and collisions
+
 public class PlayerMove : MonoBehaviour {
 
     SpriteRenderer render;
@@ -17,7 +19,10 @@ public class PlayerMove : MonoBehaviour {
     [SerializeField]
     Sprite sideSprite;
 
+    ParticleSystem system;
+
 	void Start(){
+        system = transform.Find("Effects").GetComponent<ParticleSystem>();
         render = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
 	}
@@ -33,6 +38,9 @@ public class PlayerMove : MonoBehaviour {
     }
 
     void Move(){
+        if(Managers.PlayerManager.Instance.isAnim){
+            return;
+        }
 		rb.velocity = new Vector2(xMove * moveMod, yMove * moveMod);
         if(Mathf.Abs(xMove) > Mathf.Abs(yMove)){
             if(render.sprite != sideSprite){
@@ -58,9 +66,15 @@ public class PlayerMove : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "WaterVase"){
             moveMod++;
+            ParticleSystem.MainModule main = system.main;
+            main.startColor = Color.blue;
+            system.Play();
             Destroy(col.gameObject);
         }
         if(col.gameObject.tag == "Skull"){
+            ParticleSystem.MainModule main = system.main;
+            main.startColor = Color.black;
+            system.Play();
             Managers.PlayerManager.Instance.SkullCollected(1);
             Destroy(col.gameObject);
         }

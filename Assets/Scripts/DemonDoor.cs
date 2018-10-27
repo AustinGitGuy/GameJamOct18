@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//if player is close enough and has enough skulls, open the door.
 public class DemonDoor : MonoBehaviour {
 
 	bool doorOpen;

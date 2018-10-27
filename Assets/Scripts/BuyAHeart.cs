@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Buy a life script. Full hp == 0, dead == 5;
 public class BuyAHeart : MonoBehaviour {
 
 	GameObject player;

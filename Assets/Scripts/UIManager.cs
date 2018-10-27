@@ -12,7 +12,7 @@ namespace Managers
 	{
 		[Header("Time/Health")]
 		public float timer;
-		public int playerHealth;
+		public int playerHealth = 5;
 
 		[Header("Collectibles")]
 		public int skullsCollected;
@@ -42,6 +42,7 @@ namespace Managers
 		[Header("UIText")]
 		public Text textRingsCollected;
 		public Text textCoinsCollected;
+		public Text timerText;
 
 		// Use this for initialization
 		void Start () {
@@ -63,6 +64,7 @@ namespace Managers
 			ringsCollected = Managers.PlayerManager.Instance.totalRings;
 			coinsCollected = Managers.PlayerManager.Instance.totalCollectedCoins;
 			playerHealth = Managers.PlayerManager.Instance.health;
+			UpdateTimer();
 			UpdateCoinUI();
 			UpdateRingUI();
 			CollectSkulls();
@@ -74,26 +76,26 @@ namespace Managers
 		{
 			switch(playerHealth)
 			{
-				case 0:
+				case 5:
 					health0.sprite = fullHealth;
 					health1.sprite = fullHealth;
 					health2.sprite = fullHealth;
 					health3.sprite = fullHealth;
 					health4.sprite = fullHealth;
 					break;
-				case 1:
+				case 4:
 					health0.sprite = emptyHealth;
 					break;
-				case 2:
+				case 3:
 					health1.sprite = emptyHealth;
 					break;
-				case 3:
+				case 2:
 					health2.sprite = emptyHealth;
 					break;
-				case 4:
+				case 1:
 					health3.sprite = emptyHealth;
 					break;
-				case 5:
+				case 0:
 					health4.sprite = emptyHealth;
 					Die();
 					break;
@@ -143,6 +145,11 @@ namespace Managers
 		{
 			Debug.Log("UIManager//Skulls all collected");
 			//Create portal???
+		}
+
+		public void UpdateTimer()
+		{
+			timerText.text = (timer.ToString());
 		}
 
 		//Function updates the UI text to show how many rings the player has collected/left to use

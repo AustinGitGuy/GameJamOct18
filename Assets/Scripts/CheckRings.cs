@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//If player is close enough and has enough rings, open the door.
 public class CheckRings : MonoBehaviour {
 
 	bool doorOpen;
