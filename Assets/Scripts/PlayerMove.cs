@@ -19,7 +19,10 @@ public class PlayerMove : MonoBehaviour {
     [SerializeField]
     Sprite sideSprite;
 
+    ParticleSystem system;
+
 	void Start(){
+        system = transform.Find("Effects").GetComponent<ParticleSystem>();
         render = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
 	}
@@ -63,9 +66,15 @@ public class PlayerMove : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "WaterVase"){
             moveMod++;
+            ParticleSystem.MainModule main = system.main;
+            main.startColor = Color.blue;
+            system.Play();
             Destroy(col.gameObject);
         }
         if(col.gameObject.tag == "Skull"){
+            ParticleSystem.MainModule main = system.main;
+            main.startColor = Color.black;
+            system.Play();
             Managers.PlayerManager.Instance.SkullCollected(1);
             Destroy(col.gameObject);
         }
