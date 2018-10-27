@@ -15,7 +15,7 @@ public class SoundManagerScript : Singleton<SoundManagerScript> {
     GameObject portalSoundObj;
     GameObject skullOnBloodSoundObj;
     GameObject torchSoundObj;
-
+    GameObject deathSoundObj;
 
     AudioSource skullSound;
     AudioSource doorSound;
@@ -26,6 +26,7 @@ public class SoundManagerScript : Singleton<SoundManagerScript> {
     AudioSource portalSound;
     AudioSource skullOnBloodSound;
     AudioSource torchSound;
+    AudioSource deathSound;
 
     private void Awake()
     {
@@ -38,60 +39,70 @@ public class SoundManagerScript : Singleton<SoundManagerScript> {
         portalSoundObj = GameObject.Find("portalSoundObj");
         skullOnBloodSoundObj = GameObject.Find("skullOnBloodSoundObj");
         torchSoundObj = GameObject.Find("torchSoundObj");
+        deathSoundObj = GameObject.Find("deathSoundObj");
+
+        skullSound = skullSoundObj.GetComponent<AudioSource>();
+        doorSound = doorSoundObj.GetComponent<AudioSource>();
+        ringSound = ringSoundObj.GetComponent<AudioSource>();
+        coinSound = coinSoundObj.GetComponent<AudioSource>();
+        pushPullSound = pushPullSoundObj.GetComponent<AudioSource>();
+        fountainSound = fountainSoundObj.GetComponent<AudioSource>();
+        portalSound = portalSoundObj.GetComponent<AudioSource>();
+        skullOnBloodSound = skullOnBloodSoundObj.GetComponent<AudioSource>();
+        torchSound = torchSoundObj.GetComponent<AudioSource>();
+        deathSound = deathSoundObj.GetComponent<AudioSource>();
+
     }
 
     public void playSkullSound()
     {
-        skullSound = skullSoundObj.GetComponent<AudioSource>();
         skullSound.Play();
     }
 
     public void playDoorSound()
     {
-        doorSound = doorSoundObj.GetComponent<AudioSource>();
         doorSound.Play();
     }
 
     public void playRingSound()
     {
-        ringSound = ringSoundObj.GetComponent<AudioSource>();
+
         ringSound.Play();
     }
 
     public void playCoinSound()
     {
-        coinSound = coinSoundObj.GetComponent<AudioSource>();
         coinSound.Play();
     }
 
     public void playPushPullSound()
     {
-        pushPullSound = pushPullSoundObj.GetComponent<AudioSource>();
         pushPullSound.Play();
     }
 
     public void playFountainSound()
     {
-        fountainSound = fountainSoundObj.GetComponent<AudioSource>();
         fountainSound.Play();
     }
 
     public void playPortalSound()
     {
-        portalSound = portalSoundObj.GetComponent<AudioSource>();
         portalSound.Play();
     }
 
     public void playSkullOnBloodSound()
     {
-        skullOnBloodSound = skullOnBloodSoundObj.GetComponent<AudioSource>();
         skullOnBloodSound.Play();
     }
 
     public void playTorchSound()
     {
-        torchSound = torchSoundObj.GetComponent<AudioSource>();
         torchSound.Play();
+    }
+
+    public void playDeathSound()
+    {
+        deathSound.Play();
     }
 
 }
