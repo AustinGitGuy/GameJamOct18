@@ -11,6 +11,7 @@ public class MainMenu : MonoBehaviour {
     {
         sceneManager = Managers.GameManager.Instance.getSceneManager();
         Debug.Assert(sceneManager);
+        Debug.Log("I'm starting Main Menu");
     }
     //Function is attached to the Play button and is used to advance the game to the next scene
     public void PlayGame()
