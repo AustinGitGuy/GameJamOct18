@@ -13,13 +13,13 @@ public class PushPull : MonoBehaviour {
 	void Update(){
 		Physics2D.queriesStartInColliders = false;
 		RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distance, boxMask);
-			if(hit.collider != null && hit.collider.gameObject.tag == "Barrel" && Input.GetKeyDown(KeyCode.E)){
+			if(hit.collider != null && hit.collider.gameObject.tag == "Barrel" && Input.GetKeyDown(KeyCode.Q)){
 				box = hit.collider.gameObject;
 				box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
 				box.GetComponent<FixedJoint2D>().enabled = true;
 				box.GetComponent<BoxPull>().beingPushed = true;
 			} 
-			else if(Input.GetKeyUp(KeyCode.E) && box != null){
+			else if(Input.GetKeyUp(KeyCode.Q) && box != null){
 				box.GetComponent<FixedJoint2D>().enabled = false;
 				box.GetComponent<BoxPull>().beingPushed = false;
 			}	
