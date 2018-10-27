@@ -20,8 +20,8 @@ namespace Managers{
         }
 
         void Update(){
-			float frac = Managers.TimeManager.Instance.totalTime / Managers.TimeManager.Instance.timeLeft;
-			health = Mathf.Abs(5 - Mathf.FloorToInt(5 * frac));
+			//float frac = Managers.TimeManager.Instance.totalTime / Managers.TimeManager.Instance.timeLeft;
+			//health = Mathf.Abs(5 - Mathf.FloorToInt(5 * frac));
 		}
 
 		public void CoinCollected(int coinValue){
