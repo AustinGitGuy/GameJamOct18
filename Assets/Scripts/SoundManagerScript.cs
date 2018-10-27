@@ -10,15 +10,22 @@ public class SoundManagerScript : Singleton<SoundManagerScript> {
     GameObject doorSoundObj;
     GameObject ringSoundObj;
     GameObject coinSoundObj;
-    GameObject potSoundObj;
+    GameObject pushPullSoundObj;
     GameObject fountainSoundObj;
+    GameObject portalSoundObj;
+    GameObject skullOnBloodSoundObj;
+    GameObject torchSoundObj;
+
 
     AudioSource skullSound;
     AudioSource doorSound;
     AudioSource ringSound;
     AudioSource coinSound;
-    AudioSource potSound;
+    AudioSource pushPullSound;
     AudioSource fountainSound;
+    AudioSource portalSound;
+    AudioSource skullOnBloodSound;
+    AudioSource torchSound;
 
     private void Awake()
     {
@@ -26,8 +33,11 @@ public class SoundManagerScript : Singleton<SoundManagerScript> {
         doorSoundObj = GameObject.Find("doorSoundObj");
         ringSoundObj = GameObject.Find("ringSoundObj");
         coinSoundObj = GameObject.Find("coinSoundObj");
-        potSoundObj = GameObject.Find("potSoundObj");
+        pushPullSoundObj = GameObject.Find("pushPullSoundObj");
         fountainSoundObj = GameObject.Find("fountainSoundObj");
+        portalSoundObj = GameObject.Find("portalSoundObj");
+        skullOnBloodSoundObj = GameObject.Find("skullOnBloodSoundObj");
+        torchSoundObj = GameObject.Find("torchSoundObj");
     }
 
     public void playSkullSound()
@@ -47,19 +57,41 @@ public class SoundManagerScript : Singleton<SoundManagerScript> {
         ringSound = ringSoundObj.GetComponent<AudioSource>();
         ringSound.Play();
     }
+
     public void playCoinSound()
     {
         coinSound = coinSoundObj.GetComponent<AudioSource>();
         coinSound.Play();
     }
-    public void playPotSound()
+
+    public void playPushPullSound()
     {
-        potSound = potSoundObj.GetComponent<AudioSource>();
-        potSound.Play();
+        pushPullSound = pushPullSoundObj.GetComponent<AudioSource>();
+        pushPullSound.Play();
     }
+
     public void playFountainSound()
     {
         fountainSound = fountainSoundObj.GetComponent<AudioSource>();
         fountainSound.Play();
     }
+
+    public void playPortalSound()
+    {
+        portalSound = portalSoundObj.GetComponent<AudioSource>();
+        portalSound.Play();
+    }
+
+    public void playSkullOnBloodSound()
+    {
+        skullOnBloodSound = skullOnBloodSoundObj.GetComponent<AudioSource>();
+        skullOnBloodSound.Play();
+    }
+
+    public void playTorchSound()
+    {
+        torchSound = torchSoundObj.GetComponent<AudioSource>();
+        torchSound.Play();
+    }
+
 }
