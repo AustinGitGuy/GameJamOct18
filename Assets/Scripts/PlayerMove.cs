@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Controls player movement and collisions
+
 public class PlayerMove : MonoBehaviour {
 
     SpriteRenderer render;

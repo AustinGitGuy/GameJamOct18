@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Matches scenes in build menu
 enum Scenes
 {
     GAME = 0,
@@ -11,6 +12,8 @@ enum Scenes
     UI,
     LEVEL_ONE = 4,
 }
+
+//Encapsulation of SceneManagement
 public class LevelLoader : MonoBehaviour {
     int currentScene = -1; //currently loaded level.
     int nextScene; //next level to load.
