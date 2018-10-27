@@ -313,30 +313,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 316328541}
   m_CullTransparentMesh: 0
---- !u!1 &456921511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1352602173313080, guid: 451122a634717fc448902be1804f6d2a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1678914042}
---- !u!114 &456921518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 456921511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a35029e135963ab42bd61feb52eebbaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalCollectedCoins: 0
-  totalRings: 0
-  totalSkulls: 0
-  health: 0
-  dissolve: {fileID: 0}
-  diffuse: {fileID: 0}
-  isDissolving: 0
-  isAnim: 0
 --- !u!1 &653375608
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,7 +905,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4197350786936848, guid: 451122a634717fc448902be1804f6d2a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4197350786936848, guid: 451122a634717fc448902be1804f6d2a, type: 2}
       propertyPath: m_LocalPosition.y

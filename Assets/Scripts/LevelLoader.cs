@@ -79,8 +79,8 @@ public class LevelLoader : MonoBehaviour {
     public void goShopping()
     {
         SceneManager.LoadScene((int)Scenes.SHOP, LoadSceneMode.Additive);
-        unloadLastLevel();
         loadNextLevel();
+        unloadLastLevel();
     }
     public void stopShopping()
     {
