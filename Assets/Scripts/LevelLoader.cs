@@ -76,11 +76,13 @@ public class LevelLoader : MonoBehaviour {
             Debug.LogError("Did you unload the previous scene?");
         }
     }
-    public void loadShop()
+    public void goShopping()
     {
         SceneManager.LoadScene((int)Scenes.SHOP, LoadSceneMode.Additive);
+        unloadLastLevel();
+        loadNextLevel();
     }
-    public void unloadShop()
+    public void stopShopping()
     {
         SceneManager.UnloadSceneAsync((int)Scenes.SHOP);
     }

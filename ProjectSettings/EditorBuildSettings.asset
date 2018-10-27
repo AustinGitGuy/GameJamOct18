@@ -18,8 +18,8 @@ EditorBuildSettings:
     path: Assets/Scenes/placeholderScenes/TempUI.unity
     guid: 518d9ee5bca0811459728fea90c26376
   - enabled: 1
-    path: Assets/Scenes/placeholderScenes/TempShopping.unity
-    guid: 68cd3202cdd463249bae14ec515c0f1d
+    path: Assets/Scenes/MerchantScene.unity
+    guid: a796254e0666c9d45bf63a4b8492d04d
   - enabled: 1
     path: Assets/Scenes/placeholderScenes/TempWin.unity
     guid: 8994b848441ac464a87c6f5e70db4e2a

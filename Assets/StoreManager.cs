@@ -132,8 +132,7 @@ namespace Managers
 		public void LeaveStore()
 		{
 			Debug.Log("StoreManager/LeaveStore");
-			sceneManager.loadNextLevel();
-           	sceneManager.unloadLastLevel();
+            sceneManager.stopShopping();
 		}
 	}
 }
