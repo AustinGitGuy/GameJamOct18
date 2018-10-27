@@ -15,13 +15,18 @@ enum Scenes
 
 //Encapsulation of SceneManagement
 public class LevelLoader : MonoBehaviour {
+    [SerializeField]
+    bool ShouldRunGame = false;
     int currentScene = -1; //currently loaded level.
     int nextScene; //next level to load.
     int prevScene = -1;
 
     private void Start()
     {
-        setupGame();
+        if (ShouldRunGame)
+        {
+            setupGame();
+        }
     }
 
     //Load the composite scenes and the main menu
