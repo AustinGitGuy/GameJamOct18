@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 //stores and manages player info
 namespace Managers{
@@ -14,9 +15,11 @@ namespace Managers{
 
 		void Start(){
 			GetPlayer();
-		}
+            Debug.Assert(Managers.GameManager.Instance);
 
-		void Update(){
+        }
+
+        void Update(){
 			float frac = Managers.TimeManager.Instance.totalTime / Managers.TimeManager.Instance.timeLeft;
 			health = Mathf.Abs(5 - Mathf.FloorToInt(5 * frac));
 		}
@@ -43,5 +46,16 @@ namespace Managers{
 			}
 			return playerObject;
 		}
+
+        public string getTileName()
+        {
+            Vector3Int tilePosit = new Vector3Int((int)transform.position.x , (int)transform.position.y, (int)transform.position.z);
+            Tile tile = (Tile)Managers.GameManager.Instance.getGroundTileMap().GetTile(tilePosit);
+            if (tile)
+            {
+                return tile.name;
+            }
+            return "none";
+        }
 	}
 }
