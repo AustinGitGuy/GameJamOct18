@@ -619,7 +619,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1953834388}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1162,8 +1162,8 @@ MonoBehaviour:
   coinsText: {fileID: 2145385965}
   jingleBellPanel: {fileID: 1953834387}
   waterVasePanel: {fileID: 3001236}
-  jingleBellPriceText: {fileID: 0}
-  waterVasePriceText: {fileID: 0}
+  jingleBellPriceText: {fileID: 386530921}
+  waterVasePriceText: {fileID: 1335723947}
 --- !u!4 &1153082530
 Transform:
   m_ObjectHideFlags: 0
@@ -1542,7 +1542,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 142c1f369cb945d4ba6f00e901682ef6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2efee537037923745a8cc988794f6eb5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1761,7 +1761,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9ba45290e7431c7479e1af0c6e520548, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4621e19a641680845894e20b4ec684f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1975,8 +1975,8 @@ Transform:
   m_Children:
   - {fileID: 620538451}
   - {fileID: 2046325710}
-  - {fileID: 2086415488}
   - {fileID: 386530920}
+  - {fileID: 2086415488}
   - {fileID: 217428992}
   m_Father: {fileID: 315894238}
   m_RootOrder: 5
@@ -2488,7 +2488,7 @@ RectTransform:
   m_Children:
   - {fileID: 1370242289}
   m_Father: {fileID: 1953834388}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
