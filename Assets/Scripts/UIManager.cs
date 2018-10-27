@@ -42,6 +42,7 @@ namespace Managers
 		[Header("UIText")]
 		public Text textRingsCollected;
 		public Text textCoinsCollected;
+		public Text timerText;
 
 		// Use this for initialization
 		void Start () {
@@ -63,6 +64,7 @@ namespace Managers
 			ringsCollected = Managers.PlayerManager.Instance.totalRings;
 			coinsCollected = Managers.PlayerManager.Instance.totalCollectedCoins;
 			playerHealth = Managers.PlayerManager.Instance.health;
+			UpdateTimer();
 			UpdateCoinUI();
 			UpdateRingUI();
 			CollectSkulls();
@@ -143,6 +145,11 @@ namespace Managers
 		{
 			Debug.Log("UIManager//Skulls all collected");
 			//Create portal???
+		}
+
+		public void UpdateTimer()
+		{
+			timerText.text = (timer.ToString());
 		}
 
 		//Function updates the UI text to show how many rings the player has collected/left to use
