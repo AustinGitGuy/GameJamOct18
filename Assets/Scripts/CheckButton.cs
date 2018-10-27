@@ -15,6 +15,7 @@ public class CheckButton : MonoBehaviour {
 		if(skull != null){
 			if(button.isPushed){
 				skull.gameObject.SetActive(true);
+				skull.GetComponent<PlayThenDie>().Play();
 			}
 			else {
 				skull.gameObject.SetActive(false);

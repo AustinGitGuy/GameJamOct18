@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 212676318211130460}
   - component: {fileID: 50532570109412432}
   - component: {fileID: 61313157545402632}
-  - component: {fileID: 114023911797709168}
+  - component: {fileID: 255818760172130890}
+  - component: {fileID: 114907338200862894}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Barrel
@@ -88,7 +89,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.61, y: 0.82}
   m_EdgeRadius: 0
---- !u!114 &114023911797709168
+--- !u!114 &114907338200862894
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,10 +97,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1128334665789622}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2443cde1877c34f4e985c47876e59b18, type: 3}
+  m_Script: {fileID: 11500000, guid: 2befd5544f27be743bfe52aab7683143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTouching: 0
+  defaultMass: 0
+  imovableMass: 0
+  beingPushed: 0
+  lastPos: {x: 0, y: 0, z: 0}
+  mode: 0
+  colliding: 0
 --- !u!212 &212676318211130460
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -146,3 +152,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!255 &255818760172130890
+FixedJoint2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128334665789622}
+  m_Enabled: 0
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 0}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -1.5, y: -1}
+  m_DampingRatio: 0
+  m_Frequency: 0
