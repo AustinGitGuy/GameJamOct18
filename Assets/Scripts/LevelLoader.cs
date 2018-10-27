@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 enum Scenes
 {
     GAME = 0,
-    START = 1,
-    MENU = 2,
-    SOUND = 3,
+    START,
+    SOUND,
+    UI,
     LEVEL_ONE = 4,
 }
 public class LevelLoader : MonoBehaviour {
@@ -21,24 +21,21 @@ public class LevelLoader : MonoBehaviour {
         setupGame();
     }
 
+    //Load the composite scenes and the main menu
     private void setupGame()
     {
-        SceneManager.LoadScene((int)Scenes.GAME);
-        SceneManager.LoadScene((int)Scenes.START);
-        SceneManager.LoadScene((int)Scenes.SOUND);
+        SceneManager.LoadScene((int)Scenes.START, LoadSceneMode.Additive);
+        SceneManager.LoadScene((int)Scenes.SOUND, LoadSceneMode.Additive);
+        SceneManager.LoadScene((int)Scenes.UI, LoadSceneMode.Additive);
         currentScene = (int)Scenes.START;
         nextScene = (int)Scenes.LEVEL_ONE;
     }
-    public void loadMainMenu()
+
+    public void quit()
     {
-        SceneManager.UnloadSceneAsync((int)Scenes.START);
-        SceneManager.LoadScene((int)Scenes.MENU);
+        Application.Quit();
     }
-    public void unloadMainMenu()
-    {
-        SceneManager.UnloadSceneAsync((int)Scenes.MENU);
-        SceneManager.LoadScene((int)Scenes.START);
-    }
+    //Load the next level and incremement the next level to load
     public void loadNextLevel()
     {
         //if scene not already loaded.
@@ -54,6 +51,8 @@ public class LevelLoader : MonoBehaviour {
             Debug.LogError("Did you unload the previous scene?");
         }
     }
+
+    //Unload the previous level.
     public void unloadLastLevel()
     {
         if(prevScene > 0)

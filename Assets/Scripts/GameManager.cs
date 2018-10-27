@@ -5,8 +5,12 @@ using Managers;
 
 public class GameManager : Singleton<GameManager> {
     LevelLoader sceneManager;
-	// Use this for initialization
-	void Start () {
+    private void Awake()
+    {
+        Debug.Assert(Instance);
+    }
+    // Use this for initialization
+    void Start () {
         sceneManager = gameObject.GetComponent<LevelLoader>();
         Debug.Assert(sceneManager);
 	}
