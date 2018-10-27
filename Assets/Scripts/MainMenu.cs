@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour {
     //Use LevelLoader for all scene loading / unloading needs
     private void Start()
     {
-        sceneManager = GameManager.Instance.getSceneManager();
+        sceneManager = Managers.GameManager.Instance.getSceneManager();
         Debug.Assert(sceneManager);
     }
     //Function is attached to the Play button and is used to advance the game to the next scene
