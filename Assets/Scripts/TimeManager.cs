@@ -4,7 +4,6 @@ using UnityEngine;
 
 namespace Managers {
 public class TimeManager : Singleton<TimeManager> {
-	
 		public float timeLeft;
 		public float totalTime;
 		void Start(){
