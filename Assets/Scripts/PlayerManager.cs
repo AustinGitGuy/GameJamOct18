@@ -11,8 +11,20 @@ namespace Managers{
 		public int health;
 		GameObject playerObject;
 
+		[SerializeField] 
+		Shader dissolve;
+		[SerializeField]
+		Shader diffuse;
+		
+		Renderer playerRend;
+
+		float dissolveTimer = 0;
+
+		public bool isDissolving;
+
 		void Start(){
 			GetPlayer();
+			playerRend = playerObject.GetComponent<Renderer>();
 		}
 
 		void Update(){
@@ -41,6 +53,17 @@ namespace Managers{
 				playerObject = GameObject.Find("Player");
 			}
 			return playerObject;
+		}
+
+		public IEnumerator DissolvePlayer(){
+			isDissolving = true;
+			playerRend.material.shader = dissolve;
+			dissolveTimer = 0;
+			while(dissolveTimer < 1){
+				playerRend.material.SetFloat("_Threshold", dissolveTimer);
+				dissolveTimer += Time.deltaTime;
+				yield return new WaitForSeconds(.01f);
+			}
 		}
 	}
 }

@@ -61,6 +61,7 @@ public class FlashLight2D : MonoBehaviour {
             GameObject laser = new GameObject("Flashlight ray "+ i.ToString());
             laser.transform.parent = this.transform;
             laser.AddComponent<LineRenderer>();
+            laser.AddComponent<CheckIfPlayerInRange>();
             laser.hideFlags = HideFlags.DontSave;
             _laserScaner.Add(laser);
         }
