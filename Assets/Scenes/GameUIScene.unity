@@ -1460,6 +1460,7 @@ MonoBehaviour:
   collectedSkull: {fileID: 21300000, guid: dbda0a3c939618348a95cbfce346b2de, type: 3}
   textRingsCollected: {fileID: 1502836979}
   textCoinsCollected: {fileID: 1301941613}
+  timerText: {fileID: 0}
 --- !u!4 &1876018155
 Transform:
   m_ObjectHideFlags: 0
@@ -1527,7 +1528,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 455e00d13b9010c4aba3530e29c5d1e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 142c1f369cb945d4ba6f00e901682ef6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
