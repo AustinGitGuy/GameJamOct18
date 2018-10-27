@@ -25,11 +25,9 @@ namespace Managers{
 		public bool isDissolving;
 
 		void Start(){
-			GetPlayer();
+			playerObject = GetPlayer();
 			playerRend = playerObject.GetComponent<Renderer>();
 		}
-
-        }
 
         void Update(){
 			//float frac = Managers.TimeManager.Instance.totalTime / Managers.TimeManager.Instance.timeLeft;
