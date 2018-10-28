@@ -4,36 +4,34 @@ using UnityEngine;
 
 //If player is close enough and has enough rings, open the door.
 public class CheckRings : MonoBehaviour {
-
 	bool doorOpen;
 	GameObject player;
-
+	[SerializeField]
+	GameObject otherDoor;
 	[SerializeField]
 	int requiredRingNum = 1;
-
-	[SerializeField]
-	bool vertical;
+	GameObject teleport;
 
 	void Start(){
 		player = Managers.PlayerManager.Instance.GetPlayer();
+		teleport = otherDoor.transform.Find("Teleport").gameObject;
 	}
 	
 	void Update(){
-		if(Vector2.Distance(player.transform.position, this.transform.position) <= 5 && !doorOpen){
+		if(Vector2.Distance(player.transform.position, this.transform.position) <= 5){
 			if(Input.GetKeyDown(KeyCode.E)){
-				if(Managers.PlayerManager.Instance.totalRings >= requiredRingNum){
+				if(Managers.PlayerManager.Instance.totalRings >= requiredRingNum && !doorOpen){
 					doorOpen = true;
 					Managers.PlayerManager.Instance.totalRings -= requiredRingNum;
-					//Temporary door just moves to the side
-					if(!vertical){
-						transform.position = new Vector2(transform.position.x - 2.5f, transform.position.y);
-					}
-					else {
-						transform.position = new Vector2(transform.position.x, transform.position.y - 2.5f);
-					}
+					player.transform.position = new Vector2(teleport.transform.position.x, teleport.transform.position.y);
+
+				}
+				else if(doorOpen){
+					player.transform.position = new Vector2(teleport.transform.position.x, teleport.transform.position.y);
 				}
 			}
 		}
+		
 	}
 
 	public bool GetDoorOpen(){
