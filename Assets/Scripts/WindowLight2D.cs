@@ -54,9 +54,15 @@ public class WindowLight2D : MonoBehaviour {
     }
 
     void UpdateCollider(){
-        box.size = new Vector2(Mathf.Abs(distance), 1);
-        box.offset = new Vector2(Mathf.Abs(distance) / 2, .25f);
-        box.isTrigger = true;
+		if (horizontal == true) {
+			box.size = new Vector2 (Mathf.Abs (distance), 1);
+			box.offset = new Vector2 (Mathf.Abs (distance) / 2, .25f);
+			box.isTrigger = true;
+		} else {
+			box.size = new Vector2 (1, Mathf.Abs (distance));
+			box.offset = new Vector2 (.25f, Mathf.Abs (distance) / 2);
+			box.isTrigger = true;
+		}
     }
 
 	private void SpaceRays()
@@ -143,6 +149,7 @@ public class WindowLight2D : MonoBehaviour {
 
 				if (horizontal == true) {
 					Vector2 direction = new Vector2 (_coordinates [j].x + distance, _coordinates [j].y);
+					Debug.Log (direction);
 					LineRenderer line;
 					line = obj.GetComponent<LineRenderer>();
                     obj.GetComponent<CheckIfPlayerInRange>().doRaycast = raycast;
