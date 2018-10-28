@@ -39,8 +39,13 @@ namespace Managers{
 			if(doneDissolving){
 				StartCoroutine(Reform());
 			}
+            Managers.GameManager.Instance.updateCamera(transform.position);
 		}
 
+        void updateCamera()
+        {
+            Managers.GameManager.Instance.updateCamera(transform.position);
+        }
 		public void CoinCollected(int coinValue){
 			totalCollectedCoins += coinValue;
 		}
@@ -48,7 +53,11 @@ namespace Managers{
 		public void RingCollected(int rings){
 			totalRings += rings;
 		}
-
+        
+        public void resetPlayerPosition()
+        {
+            transform.position = Vector3.zero;
+        }
 		public void SkullCollected(int skulls){
 			totalSkulls += skulls;
 		}
