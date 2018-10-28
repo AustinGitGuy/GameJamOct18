@@ -32,10 +32,15 @@ namespace Managers{
 		}
 
         void Update(){
-			//float frac = Managers.TimeManager.Instance.totalTime / Managers.TimeManager.Instance.timeLeft;
-			//health = Mathf.Abs(5 - Mathf.FloorToInt(5 * frac));
+            //float frac = Managers.TimeManager.Instance.totalTime / Managers.TimeManager.Instance.timeLeft;
+            //health = Mathf.Abs(5 - Mathf.FloorToInt(5 * frac));
+            updateCamera(); //ineficient, if lag remove this.
 		}
 
+        void updateCamera()
+        {
+            Managers.GameManager.Instance.updateCamera(transform.position);
+        }
 		public void CoinCollected(int coinValue){
 			totalCollectedCoins += coinValue;
 		}
@@ -43,7 +48,11 @@ namespace Managers{
 		public void RingCollected(int rings){
 			totalRings += rings;
 		}
-
+        
+        public void resetPlayerPosition()
+        {
+            transform.position = Vector3.zero;
+        }
 		public void SkullCollected(int skulls){
 			totalSkulls += skulls;
 		}
