@@ -9,6 +9,7 @@ TagManager:
   - CameraPoint
   - Barrel
   - Ring
+  - Flashlight
   layers:
   - Default
   - TransparentFX
