@@ -11,6 +11,9 @@ public class CheckRings : MonoBehaviour {
 	[SerializeField]
 	int requiredRingNum = 1;
 
+	[SerializeField]
+	bool vertical;
+
 	void Start(){
 		player = Managers.PlayerManager.Instance.GetPlayer();
 	}
@@ -22,7 +25,12 @@ public class CheckRings : MonoBehaviour {
 					doorOpen = true;
 					Managers.PlayerManager.Instance.totalRings -= requiredRingNum;
 					//Temporary door just moves to the side
-					transform.position = new Vector2(transform.position.x - 2, transform.position.y);
+					if(!vertical){
+						transform.position = new Vector2(transform.position.x - 2.5f, transform.position.y);
+					}
+					else {
+						transform.position = new Vector2(transform.position.x, transform.position.y - 2.5f);
+					}
 				}
 			}
 		}

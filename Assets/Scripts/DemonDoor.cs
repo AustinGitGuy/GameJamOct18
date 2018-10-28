@@ -17,7 +17,7 @@ public class DemonDoor : MonoBehaviour {
 				if(Managers.PlayerManager.Instance.totalSkulls >= 5){
 					doorOpen = true;
 					Managers.PlayerManager.Instance.totalSkulls -= 5;
-					//Temporary door just moves to the side
+					Managers.GameManager.Instance.getSceneManager().goShopping();
 					transform.position = new Vector2(transform.position.x - 2, transform.position.y);
 				}
 			}

@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1352602173313080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -1, z: 0}
+  m_LocalPosition: {x: -4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4387940239456198}
@@ -155,10 +155,11 @@ MonoBehaviour:
   totalRings: 0
   totalSkulls: 0
   health: 0
+  timerDecrease: 0
   dissolve: {fileID: 4800000, guid: 756fa76407153a54fa7a698bcb0033e8, type: 3}
   diffuse: {fileID: 10800, guid: 0000000000000000f000000000000000, type: 0}
+  noiseText: {fileID: 2800000, guid: 072f5b2d935fc9549a2da3fa04056461, type: 3}
   isDissolving: 0
-  isAnim: 0
 --- !u!198 &198649312519132036
 ParticleSystem:
   m_ObjectHideFlags: 1
