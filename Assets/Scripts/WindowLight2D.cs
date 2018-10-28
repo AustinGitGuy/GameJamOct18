@@ -27,15 +27,20 @@ public class WindowLight2D : MonoBehaviour {
     public Shader shader;
 	[SerializeField]
 	private List<Vector2> _coordinates = new List<Vector2>();
+    public bool raycast;
+    BoxCollider2D box;
 
     private void OnEnable()
     {
         CreateObject();
+        box = GetComponent<BoxCollider2D>();
+        if(!box){
+            box = gameObject.AddComponent<BoxCollider2D>();
+        }
     }
 
     public void CreateObject()
     {      
-		
 		CreateRays();
         CreateLights();
 
@@ -45,6 +50,13 @@ public class WindowLight2D : MonoBehaviour {
     {
 		SpaceRays();
         CastRays();
+        UpdateCollider();
+    }
+
+    void UpdateCollider(){
+        box.size = new Vector2(Mathf.Abs(distance), 1);
+        box.offset = new Vector2(Mathf.Abs(distance) / 2, .25f);
+        box.isTrigger = true;
     }
 
 	private void SpaceRays()
@@ -70,8 +82,6 @@ public class WindowLight2D : MonoBehaviour {
             laser.transform.parent = this.transform;
             laser.AddComponent<LineRenderer>();
             laser.AddComponent<CheckIfPlayerInRange>();
-            laser.AddComponent<BoxCollider2D>();
-            laser.GetComponent<BoxCollider2D>().isTrigger = true;
             laser.hideFlags = HideFlags.DontSave;
             _laserScaner.Add(laser);
         }
@@ -141,6 +151,7 @@ public class WindowLight2D : MonoBehaviour {
 					Vector2 direction = new Vector2 (_coordinates [j].x, _coordinates [j].y + distance);
 					LineRenderer line;
 					line = obj.GetComponent<LineRenderer> ();
+                    obj.GetComponent<CheckIfPlayerInRange>().doRaycast = raycast;
 					if (line)
 						DrawRay (ref line, _coordinates [j], direction, distance, i == 0 ? true : false);
 				}
@@ -247,6 +258,18 @@ public class WindowLight2D : MonoBehaviour {
     private void OnDisable()
     {
         DestroyObject();
+    }
+
+    void OnTriggerEnter2D(Collider2D col){
+        if(col.gameObject.tag == "Player"){
+            raycast = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col){
+        if(col.gameObject.tag == "Player"){
+            raycast = false;
+        }
     }
 
 }

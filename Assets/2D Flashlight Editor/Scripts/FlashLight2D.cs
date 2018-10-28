@@ -34,10 +34,13 @@ public class FlashLight2D : MonoBehaviour {
     private List<GameObject> _lights = new List<GameObject>();
     [SerializeField]
     public Shader shader;
+    BoxCollider2D box;
+    public bool raycast;
 
     private void OnEnable()
     {
         CreateObject();
+        box = GetComponent<BoxCollider2D>();
     }
 
     public void CreateObject()
@@ -50,6 +53,13 @@ public class FlashLight2D : MonoBehaviour {
     void Update()
     {
         CastRays();
+        UpdateCollider();
+    }
+
+    void UpdateCollider(){
+        box.size = new Vector2(distance, raysNumber * ray_step);
+        box.offset = new Vector2(distance / 2, 0);
+        box.isTrigger = true;
     }
 
     private void CreateRays()
@@ -124,12 +134,10 @@ public class FlashLight2D : MonoBehaviour {
                 LineRenderer line;
 
                 line = obj.GetComponent<LineRenderer>();
+                obj.GetComponent<CheckIfPlayerInRange>().doRaycast = raycast;
 
-                if(line)
+                if(line){
                     DrawRay(ref line, position, direction, calcDistance, i == 0 ? true : false);
-                if(!obj.GetComponent<BoxCollider2D>()){
-                    obj.AddComponent<BoxCollider2D>();
-                    obj.GetComponent<BoxCollider2D>().isTrigger = true;
                 }
             }
             i++;
@@ -220,6 +228,18 @@ public class FlashLight2D : MonoBehaviour {
     private void OnDisable()
     {
         DestroyObject();
+    }
+
+    void OnTriggerEnter2D(Collider2D col){
+        if(col.gameObject.tag == "Player"){
+            raycast = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col){
+        if(col.gameObject.tag == "Player"){
+            raycast = false;
+        }
     }
 
 }
