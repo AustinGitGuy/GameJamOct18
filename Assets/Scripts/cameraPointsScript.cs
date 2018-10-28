@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class cameraPointsScript : MonoBehaviour {
+public class cameraPointsScript : MonoBehaviour
+{
     [System.Serializable]
     struct locs
     {
@@ -17,14 +18,15 @@ public class cameraPointsScript : MonoBehaviour {
     locs[] cameraLocs;
     GameObject topLeftCorner;
     GameObject botRightCorner;
-
+    int roomIndex;
+    int prevRoomIndex;
     private void Awake()
     {
         initCenter();
     }
     public void initCenter()
     {
-        for(int i =0; i < cameraLocs.Length; i++)
+        for (int i = 0; i < cameraLocs.Length; i++)
         {
             cameraLocs[i].center = new Vector2(
                 avg(cameraLocs[i].TopLeftCorner.transform.position.x, cameraLocs[i].BottomRightCorner.transform.position.x),
@@ -47,17 +49,18 @@ public class cameraPointsScript : MonoBehaviour {
         return botRightCorner;
     }
 
- 
+
     public void setRoomPosition(Vector2 playerLoc)
     {
+        Vector2 botRight, topLeft;
         //==Get the closest rooms==/
-        int i = 0;
+        int index = 0;
         float minDistance = -1;
         float minDistanceTwo = -1;
         int minIndex = -1;
         int minIndexTwo = -1;
         float tempDist;
-        foreach(locs loc in cameraLocs)
+        foreach (locs loc in cameraLocs)
         {
             tempDist = (loc.center - playerLoc).magnitude;
             if (minDistance > tempDist)
@@ -66,19 +69,42 @@ public class cameraPointsScript : MonoBehaviour {
                 minIndexTwo = minIndex;
                 minDistanceTwo = minDistance;
                 //update minimum
-                minIndex = i;
+                minIndex = index;
                 minDistance = tempDist;
             }
             else if (minDistanceTwo > tempDist)
             {
-                minIndexTwo = i;
+                minIndexTwo = index;
                 minDistanceTwo = tempDist;
             }
-            i++;
+            index++;
         }
+        //minIndex
+        //minIndexTwo
 
-        
+        //if player is in one or both of these then perfect. if not, problem.
+
+        index = 0;
+        botRight = cameraLocs[minIndex].BottomRightCorner.transform.position;
+        topLeft = cameraLocs[minIndex].TopLeftCorner.transform.position;
+        if (playerLoc.x < botRight.x
+            && playerLoc.x > topLeft.x
+            && playerLoc.y < topLeft.y
+            && playerLoc.y > botRight.y)
+        {
+            //player is in room 1
+        }
+        botRight = cameraLocs[minIndex].BottomRightCorner.transform.position;
+        topLeft = cameraLocs[minIndex].TopLeftCorner.transform.position;
+        if (playerLoc.x < botRight.x
+            && playerLoc.x > topLeft.x
+            && playerLoc.y < topLeft.y
+            && playerLoc.y > botRight.y)
+        {
+            //player is in room 2
+        }
+        //Get which room a player is in by loc
+        //figure out if a player is in between rooms
+
     }
-    //Get which room a player is in by loc
-    //figure out if a player is in between rooms
 }
