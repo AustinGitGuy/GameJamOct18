@@ -144,7 +144,8 @@ public class WindowLight2D : MonoBehaviour {
 				if (horizontal == true) {
 					Vector2 direction = new Vector2 (_coordinates [j].x + distance, _coordinates [j].y);
 					LineRenderer line;
-					line = obj.GetComponent<LineRenderer> ();
+					line = obj.GetComponent<LineRenderer>();
+                    obj.GetComponent<CheckIfPlayerInRange>().doRaycast = raycast;
 					if (line)
 						DrawRay (ref line, _coordinates [j], direction, distance, i == 0 ? true : false);
 				} else {
