@@ -6,9 +6,11 @@ using UnityEngine;
 public class DemonDoor : MonoBehaviour {
 
 	bool doorOpen;
+    bool sound;
 	GameObject player;
-	void Start(){
-		player = Managers.PlayerManager.Instance.GetPlayer();
+    void Start(){
+
+        player = Managers.PlayerManager.Instance.GetPlayer();
 	}
 	
 	void Update(){
@@ -22,6 +24,11 @@ public class DemonDoor : MonoBehaviour {
 				}
 			}
 		}
+        if ((sound == false) && (doorOpen == true))
+        {
+            Managers.SoundManagerScript.Instance.playPortalSound();
+            sound = true;
+        }
 	}
 
 	public bool GetDoorOpen(){

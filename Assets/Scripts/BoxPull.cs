@@ -10,6 +10,7 @@ public class BoxPull : MonoBehaviour {
 	public bool beingPushed;
 	float xPos;
 
+    bool soundPlaying = false;
 	public Vector3 lastPos;
 
 	//Mode 1 prevents the barrel from being moved by other things
@@ -19,15 +20,17 @@ public class BoxPull : MonoBehaviour {
 	Rigidbody2D rb;
 
 	void Start(){
-		rb = GetComponent<Rigidbody2D>();
+
+        rb = GetComponent<Rigidbody2D>();
 		xPos = transform.position.x;
 		lastPos = transform.position;
 	}
-	
-	void FixedUpdate(){
+
+    void FixedUpdate(){
 		if(!beingPushed){
 			rb.velocity = Vector3.zero;
-		}
+        }
+
 		if(mode == 0){
 			if(beingPushed == false){
 				transform.position = new Vector3(xPos, transform.position.y);
@@ -38,11 +41,14 @@ public class BoxPull : MonoBehaviour {
 		}
 		else if(mode == 1){
 			if(!beingPushed){
-				rb.mass = imovableMass;
+
+
+                rb.mass = imovableMass;
 			} 
 			else {
 				rb.mass = defaultMass;
-			}
-		}
+
+            }
+        }
 	}
 }
