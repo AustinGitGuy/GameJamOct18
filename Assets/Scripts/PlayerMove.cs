@@ -86,5 +86,12 @@ public class PlayerMove : MonoBehaviour {
             Managers.PlayerManager.Instance.RingCollected(1);
             Destroy(col.gameObject);
         }
+        if(col.gameObject.tag == "Coin"){
+            ParticleSystem.MainModule main = system.main;
+            main.startColor = Color.yellow;
+            system.Play();
+            Managers.PlayerManager.Instance.CoinCollected(1);
+            Destroy(col.gameObject);
+        }
     }
 }

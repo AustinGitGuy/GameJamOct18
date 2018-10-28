@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2befd5544f27be743bfe52aab7683143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultMass: 0
-  imovableMass: 0
+  defaultMass: 1
+  imovableMass: 1e+12
   beingPushed: 0
   lastPos: {x: 0, y: 0, z: 0}
   mode: 0
