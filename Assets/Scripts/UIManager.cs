@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 //Script attached to _UIMANAGER_ in GameUIScene
 //Used to keep track of the UI elements and control the UI elements
@@ -40,9 +41,9 @@ namespace Managers
 		public Sprite collectedSkull;
 
 		[Header("UIText")]
-		public Text textRingsCollected;
-		public Text textCoinsCollected;
-		public Text timerText;
+		public TextMeshProUGUI textRingsCollected;
+		public TextMeshProUGUI textCoinsCollected;
+		public TextMeshProUGUI timerText;
 
 		// Use this for initialization
 		void Start () {
@@ -149,19 +150,19 @@ namespace Managers
 
 		public void UpdateTimer()
 		{
-			timerText.text = (timer.ToString());
+			timerText.SetText(timer.ToString());
 		}
 
 		//Function updates the UI text to show how many rings the player has collected/left to use
 		public void UpdateRingUI()
 		{
-			textRingsCollected.text = (ringsCollected.ToString());
+			textRingsCollected.SetText(ringsCollected.ToString());
 		}
 
 		//Function updates the UI text to show how many coins the player has collected
 		public void UpdateCoinUI()
 		{
-			textCoinsCollected.text = (coinsCollected.ToString());
+			textCoinsCollected.SetText(coinsCollected.ToString());
 		}
 	}
 }
