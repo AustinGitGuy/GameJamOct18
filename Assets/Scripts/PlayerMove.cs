@@ -38,7 +38,8 @@ public class PlayerMove : MonoBehaviour {
     }
 
     void Move(){
-        if(Managers.PlayerManager.Instance.isAnim){
+        if(Managers.PlayerManager.Instance.isDissolving){
+            rb.velocity = Vector3.zero;
             return;
         }
 		rb.velocity = new Vector2(xMove * moveMod, yMove * moveMod);
