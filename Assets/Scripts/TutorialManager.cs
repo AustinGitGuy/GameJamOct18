@@ -20,7 +20,7 @@ namespace Managers
 
 		[Header("Opening Text")]
 		int dialogueState;
-		public GameObject text1, text2, text3, text4, text5, text6, text7, text8;
+		public GameObject text1, text2, text3, text4, text5, text6, text7, text8, text9, text10, text11, text12;
 
 		[Header("Controlling Dialogue")]
 		public bool inDialogue;
@@ -28,6 +28,7 @@ namespace Managers
 		[Header("In-Game Objects")]
 		public GameObject ring0;
 		public GameObject coin0;
+		public GameObject lighting;
 
 		void Start()
 		{
@@ -49,9 +50,14 @@ namespace Managers
 			text6.SetActive(false);
 			text7.SetActive(false);
 			text8.SetActive(false);
+			text9.SetActive(false);
+			text10.SetActive(false);
+			text11.SetActive(false);
+			text12.SetActive(false);
 
 			ring0.SetActive(false);
 			coin0.SetActive(false);
+			lighting.SetActive(false);
 		}
 
 		void Update()
@@ -82,6 +88,10 @@ namespace Managers
 					text6.SetActive(false);
 					text7.SetActive(false);
 					text8.SetActive(false);
+					text9.SetActive(false);
+					text10.SetActive(false);
+					text11.SetActive(false);
+					text12.SetActive(false);
 					break;
 				case 1:
 					text1.SetActive(false);
@@ -101,25 +111,25 @@ namespace Managers
 					break;
 				case 5:
 					text5.SetActive(false);
+					text6.SetActive(true);
+					break;
+				case 6:
+					text6.SetActive(false);
 					inDialogue = false;
 					NPC.SetActive(false);
 					playerImage.SetActive(false);
 					dialogueBackground.SetActive(false);
 					playerRB.constraints = RigidbodyConstraints2D.FreezeRotation;
 					break;
-				case 6:
+				case 7:
 					playerRB.constraints = RigidbodyConstraints2D.FreezeAll;
 					NPC.SetActive(true);
 					playerImage.SetActive(true);
 					dialogueBackground.SetActive(true);
-					text5.SetActive(false);
-					text6.SetActive(true);
-					ring0.SetActive(true);
-					coin0.SetActive(true);
-					break;
-				case 7:
 					text6.SetActive(false);
 					text7.SetActive(true);
+					ring0.SetActive(true);
+					coin0.SetActive(true);
 					break;
 				case 8:
 					text7.SetActive(false);
@@ -127,11 +137,28 @@ namespace Managers
 					break;
 				case 9:
 					text8.SetActive(false);
+					text9.SetActive(true);
+					break;
+				case 10:
+					text9.SetActive(false);
+					text10.SetActive(true);
+					break;
+				case 11:
+					text10.SetActive(false);
+					text11.SetActive(true);
+					break;
+				case 12:
+					text11.SetActive(false);
+					text12.SetActive(true);
+					break;
+				case 13:
+					text12.SetActive(false);
 					inDialogue = false;
 					NPC.SetActive(false);
 					playerImage.SetActive(false);
 					dialogueBackground.SetActive(false);
 					playerRB.constraints = RigidbodyConstraints2D.FreezeRotation;
+					lighting.SetActive(true);
 					break;
 			}
 		}
