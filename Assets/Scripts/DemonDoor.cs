@@ -9,7 +9,7 @@ public class DemonDoor : MonoBehaviour {
     bool sound;
 	GameObject player;
 	[SerializeField]
-	int skullNum;
+	int skullNum = 5;
 
 	void Start(){
 		player = Managers.PlayerManager.Instance.GetPlayer();

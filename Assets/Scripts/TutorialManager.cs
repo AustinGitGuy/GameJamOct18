@@ -32,6 +32,7 @@ namespace Managers
 
 		void Start()
 		{
+			player = Managers.PlayerManager.Instance.GetPlayer();
 			playerRB = player.GetComponent<Rigidbody2D>();
 			playerRB.constraints = RigidbodyConstraints2D.FreezeAll;
 
@@ -57,7 +58,7 @@ namespace Managers
 
 			ring0.SetActive(false);
 			coin0.SetActive(false);
-			lighting.SetActive(false);
+			//lighting.SetActive(false);
 		}
 
 		void Update()

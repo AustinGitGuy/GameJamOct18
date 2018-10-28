@@ -24,11 +24,11 @@ EditorBuildSettings:
     path: Assets/Scenes/placeholderScenes/TempWin.unity
     guid: 8994b848441ac464a87c6f5e70db4e2a
   - enabled: 1
+    path: Assets/Scenes/NewTutorialScene.unity
+    guid: 2aefe0bc4057a4e488c793d74c5a93ab
+  - enabled: 1
     path: Assets/Scenes/FinishedScene/LevelScene4.unity
     guid: 40b1074cb2cdb1e4c8ae1b227d7a8ccd
-  - enabled: 1
-    path: Assets/Scenes/TutorialScene.unity
-    guid: 407adbfd4f4dd354092db4911ef06a68
   - enabled: 1
     path: Assets/Scenes/placeholderScenes/TempLevelOne.unity
     guid: abee1fd3cc9c2314fbd9bf0c51ca8bc3
