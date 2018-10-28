@@ -6,6 +6,7 @@ using UnityEngine;
 public class DemonDoor : MonoBehaviour {
 
 	bool doorOpen;
+    bool sound;
 	GameObject player;
 	[SerializeField]
 	int skullNum;
@@ -25,6 +26,11 @@ public class DemonDoor : MonoBehaviour {
 				}
 			}
 		}
+        if ((sound == false) && (doorOpen == true))
+        {
+            Managers.SoundManagerScript.Instance.playPortalSound();
+            sound = true;
+        }
 	}
 
 	public bool GetDoorOpen(){

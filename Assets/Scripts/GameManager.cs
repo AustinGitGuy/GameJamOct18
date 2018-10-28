@@ -31,7 +31,8 @@ namespace Managers
             cameraScript = cps;
             if (!cameraScript)
             {
-                //Load default positions
+                cameraObject1.transform.position = Vector3.zero;
+                cameraObject2.transform.position = Vector3.zero;
             }
         }
 

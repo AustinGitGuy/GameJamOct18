@@ -23,28 +23,32 @@ public class PushPull : MonoBehaviour {
 		Debug.DrawRay(new Vector3(transform.position.x, transform.position.y, transform.position.z), Vector2.up * transform.localScale.x, Color.red);
 		Debug.DrawRay(new Vector3(transform.position.x, transform.position.y, transform.position.z), Vector2.down * transform.localScale.x, Color.red);
 		if(!attachBarrel && hit.collider != null && (hit.collider.gameObject.tag == "Skull" || hit.collider.gameObject.tag == "Barrel") && Input.GetKeyDown(KeyCode.Space) && hit2.collider != null && (hit2.collider.gameObject.tag == "Barrel" || hit2.collider.gameObject.tag == "Skull")){
-			box = hit.collider.gameObject;
+            Managers.SoundManagerScript.Instance.playPushPullSound();
+            box = hit.collider.gameObject;
 			attachBarrel = true;
 			box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
 			box.GetComponent<FixedJoint2D>().enabled = true;
 			box.GetComponent<BoxPull>().beingPushed = true;
 		}
 		if(!attachBarrel && hit3.collider != null && (hit3.collider.gameObject.tag == "Barrel" || hit3.collider.gameObject.tag == "Skull") && Input.GetKeyDown(KeyCode.Space)){
-			box = hit3.collider.gameObject;
+            Managers.SoundManagerScript.Instance.playPushPullSound();
+            box = hit3.collider.gameObject;
 			attachBarrel = true;
 			box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
 			box.GetComponent<FixedJoint2D>().enabled = true;
 			box.GetComponent<BoxPull>().beingPushed = true;
 		}
 		if(!attachBarrel && hit4.collider != null && (hit4.collider.gameObject.tag == "Barrel" || hit4.collider.gameObject.tag == "Skull") && Input.GetKeyDown(KeyCode.Space)){
-			box = hit4.collider.gameObject;
+            Managers.SoundManagerScript.Instance.playPushPullSound();
+            box = hit4.collider.gameObject;
 			attachBarrel = true;
 			box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
 			box.GetComponent<FixedJoint2D>().enabled = true;
 			box.GetComponent<BoxPull>().beingPushed = true;
 		}
 		else if(Input.GetKeyUp(KeyCode.Space) && box != null){
-			attachBarrel = false;
+            Managers.SoundManagerScript.Instance.pausePushPullSound();
+            attachBarrel = false;
 			box.GetComponent<FixedJoint2D>().enabled = false;
 			box.GetComponent<BoxPull>().beingPushed = false;
 		}
