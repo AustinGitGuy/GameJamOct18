@@ -62,7 +62,6 @@ public class FlashLight2D : MonoBehaviour {
             laser.transform.parent = this.transform;
             laser.AddComponent<LineRenderer>();
             laser.AddComponent<CheckIfPlayerInRange>();
-            laser.AddComponent<BoxCollider2D>();
             laser.hideFlags = HideFlags.DontSave;
             _laserScaner.Add(laser);
         }
@@ -122,13 +121,16 @@ public class FlashLight2D : MonoBehaviour {
                 float calcDistance = Mathf.Sqrt(Mathf.Pow(distance, 2f) + Mathf.Pow(y, 2f));
                 float deg = Mathf.Atan2(y, distance) * Mathf.Rad2Deg;
                 Vector2 direction = RotateVector(transform.TransformDirection(Vector2.right), deg);
-
                 LineRenderer line;
 
                 line = obj.GetComponent<LineRenderer>();
 
                 if(line)
                     DrawRay(ref line, position, direction, calcDistance, i == 0 ? true : false);
+                if(!obj.GetComponent<BoxCollider2D>()){
+                    obj.AddComponent<BoxCollider2D>();
+                    obj.GetComponent<BoxCollider2D>().isTrigger = true;
+                }
             }
             i++;
         }
