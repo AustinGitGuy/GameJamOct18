@@ -7,7 +7,7 @@ Shader "Unlit/DissolveEffectShader"
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
-		_NoiseTex ("Texture", 2D) = "white" {}
+		_NoiseTex ("Texture", 2D) = "white" {}  
 		[MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
 		_EdgeColour1 ("Edge colour 1", Color) = (1.0, 1.0, 1.0, 1.0)
 		_EdgeColour2 ("Edge colour 2", Color) = (1.0, 1.0, 1.0, 1.0)
