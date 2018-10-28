@@ -63,9 +63,11 @@ public class LevelLoader : MonoBehaviour {
     //Load the next level and incremement the next level to load
     public void loadNextLevel()
     {
+        Managers.PlayerManager.Instance.resetPlayerPosition();
         //if scene not already loaded.
         if (currentScene != nextScene && prevScene < 0)
         {
+            Managers.GameManager.Instance.LoadedNewCameraLevel(null);
             SceneManager.LoadScene(nextScene, LoadSceneMode.Additive);
             prevScene = currentScene;
             currentScene = nextScene;
