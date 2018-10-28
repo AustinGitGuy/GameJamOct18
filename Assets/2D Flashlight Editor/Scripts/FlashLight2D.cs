@@ -173,6 +173,7 @@ public class FlashLight2D : MonoBehaviour {
         positions[1].z = -.01f;
         if (hitRayCast.collider)
         {
+            //Debug.Log("Test");
             if (debugLight)
                 Debug.DrawRay(position, direction * hitRayCast.distance, Color.red);
 
