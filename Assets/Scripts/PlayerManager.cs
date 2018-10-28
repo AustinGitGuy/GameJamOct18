@@ -12,28 +12,33 @@ namespace Managers{
 		public int totalSkulls = 0;
 		public int health;
 		GameObject playerObject;
-
+		[SerializeField]
+		float timerDecrease;
 		[SerializeField] 
 		Shader dissolve;
 		[SerializeField]
 		Shader diffuse;
-		
+		[SerializeField]
+		Texture noiseText;
 		Renderer playerRend;
 
 		float dissolveTimer = 0;
 
 		public bool isDissolving;
-		public bool isAnim;
+		bool doneDissolving;
+		GameObject[] points;
 
 		void Start(){
 			health = 5;
 			playerObject = GetPlayer();
 			playerRend = playerObject.GetComponent<Renderer>();
+			points = GameObject.FindGameObjectsWithTag("CameraPoint");
 		}
 
         void Update(){
-			//float frac = Managers.TimeManager.Instance.totalTime / Managers.TimeManager.Instance.timeLeft;
-			//health = Mathf.Abs(5 - Mathf.FloorToInt(5 * frac));
+			if(doneDissolving){
+				StartCoroutine(Reform());
+			}
 		}
 
 		public void CoinCollected(int coinValue){
@@ -62,12 +67,28 @@ namespace Managers{
 		public IEnumerator DissolvePlayer(){
 			isDissolving = true;
 			playerRend.material.shader = dissolve;
+			playerRend.material.SetTexture("_NoiseTex", noiseText);
 			dissolveTimer = 0;
 			while(dissolveTimer < 1){
-				playerRend.material.SetFloat("_Threshold", dissolveTimer);
+				playerRend.material.SetFloat("_Level", dissolveTimer);
 				dissolveTimer += .02f;
-				yield return new WaitForSeconds(.05f);
+				yield return new WaitForSeconds(.04f);
 			}
+			doneDissolving = true;
+			playerObject.transform.position = GetClosestPoint(points).gameObject.GetComponent<CameraType>().safeSpot.position;
+		}
+
+		IEnumerator Reform(){
+			doneDissolving = false;
+			dissolveTimer = 1;
+			while(dissolveTimer > 0){
+				playerRend.material.SetFloat("_Level", dissolveTimer);
+				dissolveTimer -= .02f;
+				yield return new WaitForSeconds(.04f);
+			}
+			isDissolving = false;
+			playerRend.material.shader = diffuse;
+			Managers.TimeManager.Instance.timeLeft -= timerDecrease;
 		}
 
         public string getTileName()
@@ -80,5 +101,20 @@ namespace Managers{
             }
             return "none";
         }
+
+			//https://forum.unity.com/threads/clean-est-way-to-find-nearest-object-of-many-c.44315/
+		Transform GetClosestPoint(GameObject[] points){
+    		Transform tMin = null;
+    		float minDist = Mathf.Infinity;
+    		Vector3 currentPos = playerObject.transform.position;
+    		foreach(GameObject t in points){
+        		float dist = Vector3.Distance(t.transform.position, currentPos);
+        		if(dist < minDist && t.GetComponent<CameraType>().type == CameraType.CamType.ZoomIn){
+            		tMin = t.transform;
+            		minDist = dist;
+        		}
+    		}
+    		return tMin;
+		}
 	}
 }

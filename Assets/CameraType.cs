@@ -6,4 +6,6 @@ public class CameraType : MonoBehaviour {
 
 	public enum CamType {ZoomIn, ZoomOut};
 	public CamType type = CamType.ZoomIn;
+
+	public Transform safeSpot;
 }
