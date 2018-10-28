@@ -116,7 +116,7 @@ namespace Managers
 			switch(skullsCollected)
 			{
 				case 0:
-					skull0.sprite = emptySkull;
+ 					skull0.sprite = emptySkull;
 					skull1.sprite = emptySkull;
 					skull2.sprite = emptySkull;
 					skull3.sprite = emptySkull;
@@ -150,19 +150,25 @@ namespace Managers
 
 		public void UpdateTimer()
 		{
-			timerText.SetText(timer.ToString());
+			if(timerText != null){
+				timerText.SetText(timer.ToString());
+			}
 		}
 
 		//Function updates the UI text to show how many rings the player has collected/left to use
 		public void UpdateRingUI()
 		{
-			textRingsCollected.SetText(ringsCollected.ToString());
+			if(textRingsCollected != null){
+				textRingsCollected.SetText(ringsCollected.ToString());
+			}
 		}
 
 		//Function updates the UI text to show how many coins the player has collected
 		public void UpdateCoinUI()
 		{
-			textCoinsCollected.SetText(coinsCollected.ToString());
+			if(textCoinsCollected != null){
+				textCoinsCollected.SetText(coinsCollected.ToString());
+			}
 		}
 	}
 }

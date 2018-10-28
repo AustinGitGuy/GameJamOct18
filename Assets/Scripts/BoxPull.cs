@@ -12,6 +12,7 @@ public class BoxPull : MonoBehaviour {
 
 	public Vector3 lastPos;
 
+	//Mode 1 prevents the barrel from being moved by other things
 	public int mode;
 	public int colliding;
 

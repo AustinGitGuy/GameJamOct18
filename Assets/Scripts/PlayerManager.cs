@@ -66,7 +66,7 @@ namespace Managers{
 			while(dissolveTimer < 1){
 				playerRend.material.SetFloat("_Threshold", dissolveTimer);
 				dissolveTimer += .02f;
-				yield return new WaitForSeconds(.01f);
+				yield return new WaitForSeconds(.05f);
 			}
 		}
 

@@ -18,12 +18,11 @@ public class CheckIfPlayerInRange : MonoBehaviour {
 	}
 
 	void CheckHit(){
-		startPos = line.GetPosition(0);
-		endPos = line.GetPosition(1);
-		endPos = new Vector2(endPos.x + .2f, endPos.y);
-		distance = Vector2.Distance(startPos, endPos);
-		RaycastHit2D hit = Physics2D.Raycast(startPos, endPos - startPos, distance);
-		if(hit && hit.transform.tag == "Player"){
+
+	}
+
+	void OnTriggerEnter2D(Collider2D col){
+		if(col.gameObject.tag == "Player"){
 			if(!Managers.PlayerManager.Instance.isDissolving){
 				StartCoroutine(Managers.PlayerManager.Instance.DissolvePlayer());
 			}

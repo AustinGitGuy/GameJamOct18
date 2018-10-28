@@ -70,6 +70,8 @@ public class WindowLight2D : MonoBehaviour {
             laser.transform.parent = this.transform;
             laser.AddComponent<LineRenderer>();
             laser.AddComponent<CheckIfPlayerInRange>();
+            laser.AddComponent<BoxCollider2D>();
+            laser.GetComponent<BoxCollider2D>().isTrigger = true;
             laser.hideFlags = HideFlags.DontSave;
             _laserScaner.Add(laser);
         }

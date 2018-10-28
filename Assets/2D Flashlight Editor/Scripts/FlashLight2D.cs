@@ -62,6 +62,7 @@ public class FlashLight2D : MonoBehaviour {
             laser.transform.parent = this.transform;
             laser.AddComponent<LineRenderer>();
             laser.AddComponent<CheckIfPlayerInRange>();
+            laser.AddComponent<BoxCollider2D>();
             laser.hideFlags = HideFlags.DontSave;
             _laserScaner.Add(laser);
         }
