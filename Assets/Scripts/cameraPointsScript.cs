@@ -84,7 +84,7 @@ public class cameraPointsScript : MonoBehaviour
 
         //if player is in one or both of these then perfect. if not, problem.
 
-        index = 0;
+        index = -1;
         botRight = cameraLocs[minIndex].BottomRightCorner.transform.position;
         topLeft = cameraLocs[minIndex].TopLeftCorner.transform.position;
         if (playerLoc.x < botRight.x
@@ -92,17 +92,25 @@ public class cameraPointsScript : MonoBehaviour
             && playerLoc.y < topLeft.y
             && playerLoc.y > botRight.y)
         {
-            //player is in room 1
+            index = minIndex;
         }
-        botRight = cameraLocs[minIndex].BottomRightCorner.transform.position;
-        topLeft = cameraLocs[minIndex].TopLeftCorner.transform.position;
-        if (playerLoc.x < botRight.x
-            && playerLoc.x > topLeft.x
-            && playerLoc.y < topLeft.y
-            && playerLoc.y > botRight.y)
+        if (index == -1)
         {
-            //player is in room 2
+            botRight = cameraLocs[minIndexTwo].BottomRightCorner.transform.position;
+            topLeft = cameraLocs[minIndexTwo].TopLeftCorner.transform.position;
+            if (playerLoc.x < botRight.x
+                && playerLoc.x > topLeft.x
+                && playerLoc.y < topLeft.y
+                && playerLoc.y > botRight.y)
+            {
+                index = minIndexTwo;
+            }
         }
+        if(index == -1)
+        {
+
+        }
+
         //Get which room a player is in by loc
         //figure out if a player is in between rooms
 
