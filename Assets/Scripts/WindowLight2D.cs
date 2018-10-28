@@ -191,7 +191,7 @@ public class WindowLight2D : MonoBehaviour {
                 Debug.DrawRay(position, direction * hitRayCast.distance, Color.red);
 
 			positions[1] = (hitRayCast.point);
-			Debug.Log (hitRayCast.point);
+			//Debug.Log (hitRayCast.point);
 
             if (enableLight)
             {
