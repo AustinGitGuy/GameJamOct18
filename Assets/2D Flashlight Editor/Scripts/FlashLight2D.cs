@@ -57,6 +57,9 @@ public class FlashLight2D : MonoBehaviour {
     }
 
     void UpdateCollider(){
+        if(!box){
+            box = gameObject.AddComponent<BoxCollider2D>();
+        }
         box.size = new Vector2(distance, raysNumber * ray_step);
         box.offset = new Vector2(distance / 2, 0);
         box.isTrigger = true;
@@ -168,9 +171,9 @@ public class FlashLight2D : MonoBehaviour {
         positions[0].z = -.01f;
         positions[1] = position + direction.normalized * distance;
         positions[1].z = -.01f;
-
         if (hitRayCast.collider)
         {
+            Debug.Log("Test");
             if (debugLight)
                 Debug.DrawRay(position, direction * hitRayCast.distance, Color.red);
 
@@ -233,6 +236,9 @@ public class FlashLight2D : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D col){
         if(col.gameObject.tag == "Player"){
             raycast = true;
+        }
+        if(col.gameObject.tag == "Flashlight"){
+            Physics2D.IgnoreCollision(col, box);
         }
     }
 
