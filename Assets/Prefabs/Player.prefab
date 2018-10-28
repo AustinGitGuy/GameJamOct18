@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1352602173313080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4387940239456198}
@@ -108,8 +108,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.016620517, y: 0.027700663}
-  m_Size: {x: 1.0297229, y: 1.4818829}
+  m_Offset: {x: -0.016620517, y: -0.3132408}
+  m_Size: {x: 0.8, y: 0.8}
   m_Direction: 0
 --- !u!114 &114109624769236118
 MonoBehaviour:
@@ -155,8 +155,8 @@ MonoBehaviour:
   totalRings: 0
   totalSkulls: 0
   health: 0
-  dissolve: {fileID: 0}
-  diffuse: {fileID: 0}
+  dissolve: {fileID: 4800000, guid: 756fa76407153a54fa7a698bcb0033e8, type: 3}
+  diffuse: {fileID: 10800, guid: 0000000000000000f000000000000000, type: 0}
   isDissolving: 0
   isAnim: 0
 --- !u!198 &198649312519132036
