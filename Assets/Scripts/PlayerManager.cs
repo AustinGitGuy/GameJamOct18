@@ -39,6 +39,7 @@ namespace Managers{
 			if(doneDissolving){
 				StartCoroutine(Reform());
 			}
+            Managers.GameManager.Instance.updateCamera(transform.position);
 		}
 
         void updateCamera()
