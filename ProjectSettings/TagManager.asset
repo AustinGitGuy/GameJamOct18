@@ -10,6 +10,7 @@ TagManager:
   - Barrel
   - Ring
   - Flashlight
+  - Coin
   layers:
   - Default
   - TransparentFX
