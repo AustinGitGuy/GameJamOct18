@@ -156,6 +156,11 @@ Prefab:
       propertyPath: m_Name
       value: Coin (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 58586315413162262, guid: 783338e646d1e6e4e9ae86819e499a60,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
   m_IsPrefabAsset: 0
@@ -12532,7 +12537,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12687,6 +12692,11 @@ Prefab:
     - target: {fileID: 1890277177544346, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
       propertyPath: m_Name
       value: Coin (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 58586315413162262, guid: 783338e646d1e6e4e9ae86819e499a60,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
@@ -12969,7 +12979,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -13902,6 +13912,11 @@ Prefab:
       propertyPath: m_Name
       value: Coin (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 58586315413162262, guid: 783338e646d1e6e4e9ae86819e499a60,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
   m_IsPrefabAsset: 0
@@ -14373,6 +14388,11 @@ Prefab:
     - target: {fileID: 1890277177544346, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
       propertyPath: m_Name
       value: Coin (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 58586315413162262, guid: 783338e646d1e6e4e9ae86819e499a60,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
@@ -15113,7 +15133,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4825904262546290, guid: 260cd2aad1f4a414b878dcc8d1a8b875, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 4825904262546290, guid: 260cd2aad1f4a414b878dcc8d1a8b875, type: 2}
       propertyPath: m_LocalPosition.z
@@ -15280,6 +15300,11 @@ Prefab:
     - target: {fileID: 1890277177544346, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
       propertyPath: m_Name
       value: Coin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 58586315413162262, guid: 783338e646d1e6e4e9ae86819e499a60,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
@@ -15504,7 +15529,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4625839414752742, guid: 02eb5591374e2474a855bb47a21e158f, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 4625839414752742, guid: 02eb5591374e2474a855bb47a21e158f, type: 2}
       propertyPath: m_LocalPosition.z
@@ -27236,7 +27261,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -37841,7 +37866,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -44858,7 +44883,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -45252,7 +45277,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -45641,6 +45666,11 @@ Prefab:
       propertyPath: m_Name
       value: Coin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 58586315413162262, guid: 783338e646d1e6e4e9ae86819e499a60,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
   m_IsPrefabAsset: 0
@@ -45788,6 +45818,11 @@ Prefab:
       propertyPath: m_Name
       value: Coin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 58586315413162262, guid: 783338e646d1e6e4e9ae86819e499a60,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
   m_IsPrefabAsset: 0
@@ -45819,7 +45854,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -51233,7 +51268,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -51540,6 +51575,11 @@ Prefab:
     - target: {fileID: 4526095409447458, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
       propertyPath: m_RootOrder
       value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 58586315413162262, guid: 783338e646d1e6e4e9ae86819e499a60,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 783338e646d1e6e4e9ae86819e499a60, type: 2}
