@@ -346,7 +346,7 @@ Transform:
   m_GameObject: {fileID: 849342435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.2, y: 13.1, z: 0}
-  m_LocalScale: {x: 3.9845, y: 3.9845, z: 3.9845}
+  m_LocalScale: {x: 13.895545, y: 13.895545, z: 13.895545}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -459,6 +459,11 @@ Prefab:
     - target: {fileID: 1019189338721998, guid: 23841e581ae904d4a9f47bb7f412557d, type: 2}
       propertyPath: m_Name
       value: SoundManager (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 82539333633730624, guid: 23841e581ae904d4a9f47bb7f412557d,
+        type: 2}
+      propertyPath: Loop
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23841e581ae904d4a9f47bb7f412557d, type: 2}
@@ -684,7 +689,7 @@ Camera:
   far clip plane: 5000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.9800773
+  orthographic size: 5.9785705
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
