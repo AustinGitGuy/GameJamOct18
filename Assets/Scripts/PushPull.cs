@@ -10,6 +10,7 @@ public class PushPull : MonoBehaviour {
 	public LayerMask boxMask;
 	GameObject box;
 
+	[SerializeField]
 	bool attachBarrel;
 
 	void Update(){
@@ -51,6 +52,9 @@ public class PushPull : MonoBehaviour {
             attachBarrel = false;
 			box.GetComponent<FixedJoint2D>().enabled = false;
 			box.GetComponent<BoxPull>().beingPushed = false;
+		}
+		if(!box){
+			attachBarrel = false;
 		}
 	}
 }

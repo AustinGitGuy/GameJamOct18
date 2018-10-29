@@ -32,6 +32,10 @@ namespace Managers{
 			health = 5;
 			playerObject = GetPlayer();
 			playerRend = playerObject.GetComponent<Renderer>();
+			OnSceneChange();
+		}
+
+		public void OnSceneChange(){
 			points = GameObject.FindGameObjectsWithTag("CameraPoint");
 		}
 
@@ -98,6 +102,11 @@ namespace Managers{
 			isDissolving = false;
 			playerRend.material.shader = diffuse;
 			Managers.TimeManager.Instance.timeLeft -= timerDecrease;
+			health--;
+			if(health <= 0){
+				Debug.Log("Game over");
+				//Game over
+			}
 		}
 
         public string getTileName()

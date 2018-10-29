@@ -30,6 +30,8 @@ public class cameraPointsScript : MonoBehaviour
     GameObject botRightCorner;
     int roomIndex;
     int prevRoomIndex;
+    public float totalTime;
+
     private void Awake()
     {
         initCenter();

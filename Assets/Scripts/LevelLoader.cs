@@ -8,7 +8,6 @@ enum Scenes
 {
     GAME = 0,
     START,
-    SOUND,  
     UI,
     SHOP,
     WIN_SCENE,
@@ -41,9 +40,8 @@ public class LevelLoader : MonoBehaviour {
     //Load the composite scenes and the main menu
     private void setupGame()
     {
-        SceneManager.LoadScene((int)Scenes.START, LoadSceneMode.Additive);
-        SceneManager.LoadScene((int)Scenes.SOUND, LoadSceneMode.Additive);
         SceneManager.LoadScene((int)Scenes.UI, LoadSceneMode.Additive);
+        SceneManager.LoadScene((int)Scenes.START, LoadSceneMode.Additive);
         currentScene = (int)Scenes.START;
         nextScene = (int)Scenes.LEVEL_ONE;
     }
@@ -63,6 +61,7 @@ public class LevelLoader : MonoBehaviour {
     //Load the next level and incremement the next level to load
     public void loadNextLevel()
     {
+        Managers.PlayerManager.Instance.OnSceneChange();
         Managers.PlayerManager.Instance.resetPlayerPosition();
         //if scene not already loaded.
         if (currentScene != nextScene && prevScene < 0)
