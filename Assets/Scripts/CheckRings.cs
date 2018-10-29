@@ -21,6 +21,7 @@ public class CheckRings : MonoBehaviour {
 		if(Vector2.Distance(player.transform.position, this.transform.position) <= 5){
 			if(Input.GetKeyDown(KeyCode.E)){
 				if(Managers.PlayerManager.Instance.totalRings >= requiredRingNum && !doorOpen){
+                    Managers.SoundManagerScript.Instance.playDoorSound();
 					doorOpen = true;
 					Managers.PlayerManager.Instance.totalRings -= requiredRingNum;
 					player.transform.position = new Vector2(teleport.transform.position.x, teleport.transform.position.y);
