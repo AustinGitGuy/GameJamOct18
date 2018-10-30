@@ -31,10 +31,12 @@ namespace Managers
             cameraScript = cps;
             if (!cameraScript)
             {
-                Managers.TimeManager.Instance.totalTime = cameraScript.totalTime;
-                Managers.TimeManager.Instance.timeLeft = cameraScript.totalTime;
                 cameraObject1.transform.position = Vector3.zero;
                 cameraObject2.transform.position = Vector3.zero;
+            }
+            else {
+                Managers.TimeManager.Instance.totalTime = cameraScript.totalTime;
+                Managers.TimeManager.Instance.timeLeft = cameraScript.totalTime;
             }
         }
 

@@ -44,6 +44,10 @@ namespace Managers{
 				StartCoroutine(Reform());
 			}
             Managers.GameManager.Instance.updateCamera(transform.position);
+			if(health <= 0){
+				health = 5;
+				StartCoroutine(Managers.GameManager.Instance.getSceneManager().ReloadLevel());
+			}
 		}
 
         void updateCamera()

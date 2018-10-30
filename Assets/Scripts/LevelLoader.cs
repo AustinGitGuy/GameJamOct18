@@ -53,14 +53,16 @@ public class LevelLoader : MonoBehaviour {
 
     public void loadWinScreen()
     {
-        SceneManager.LoadScene((int)Scenes.WIN_SCENE, LoadSceneMode.Additive);
-        unloadLastLevel();
-        SceneManager.UnloadSceneAsync(currentScene);
+        SceneManager.LoadScene((int)Scenes.WIN_SCENE);
 
     }
     //Load the next level and incremement the next level to load
     public void loadNextLevel()
     {
+        if(nextScene >= 8){
+            loadWinScreen();
+            return;
+        }
         Managers.PlayerManager.Instance.OnSceneChange();
         Managers.PlayerManager.Instance.resetPlayerPosition();
         //if scene not already loaded.
@@ -76,6 +78,12 @@ public class LevelLoader : MonoBehaviour {
         {
             Debug.LogError("Did you unload the previous scene?");
         }
+    }
+
+    public IEnumerator ReloadLevel(){
+        AsyncOperation unload = SceneManager.UnloadSceneAsync(currentScene);
+        yield return unload;
+        SceneManager.LoadScene(currentScene, LoadSceneMode.Additive);
     }
     public void goShopping()
     {

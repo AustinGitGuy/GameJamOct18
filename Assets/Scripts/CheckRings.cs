@@ -11,14 +11,19 @@ public class CheckRings : MonoBehaviour {
 	[SerializeField]
 	int requiredRingNum = 1;
 	GameObject teleport;
+	CheckRings otherRings;
 
 	void Start(){
 		player = Managers.PlayerManager.Instance.GetPlayer();
 		teleport = otherDoor.transform.Find("Teleport").gameObject;
+		otherRings = otherDoor.GetComponent<CheckRings>();
 	}
 	
 	void Update(){
-		if(Vector2.Distance(player.transform.position, this.transform.position) <= 5){
+		if(otherRings.GetDoorOpen()){
+			doorOpen = true;
+		}
+		if(Vector2.Distance(player.transform.position, this.transform.position) <= 3){
 			if(Input.GetKeyDown(KeyCode.E)){
 				if(Managers.PlayerManager.Instance.totalRings >= requiredRingNum && !doorOpen){
                     Managers.SoundManagerScript.Instance.playDoorSound();

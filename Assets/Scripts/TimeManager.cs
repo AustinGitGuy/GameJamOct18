@@ -13,6 +13,10 @@ public class TimeManager : Singleton<TimeManager> {
 
 		void Update(){
 			timeLeft -= Time.deltaTime;
+			if(timeLeft < 0){
+				Managers.PlayerManager.Instance.HealthMod(-1);
+				Managers.GameManager.Instance.getSceneManager().ReloadLevel();
+			}
 		}
 	}
 }
